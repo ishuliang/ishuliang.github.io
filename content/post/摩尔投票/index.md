@@ -1,0 +1,22 @@
+---
+title: "摩尔投票"
+description: 
+date: 2024-12-16 10:18:53
+image: index.jpg
+math: false
+hidden: false
+comments: false
+draft: false
+---
+
+摩尔投票一般用于找绝对众数。在数列p中出现次数严格大于p/2的数就是绝对众数。
+
+> 可以使用map统计每个数字出现次数
+>
+> 使用排序，取中间数字
+
+摩尔投票的思想：
+
+每次从序列里选择两个不相同的数字删除掉（或称为“抵消”），最后剩下一个数字或几个相同的数字，就是出现次数大于总数一半的那个。（**在一定存在的条件下**）
+
+具体实现可以参考：https://www.cnblogs.com/RioTian/p/12486239.html

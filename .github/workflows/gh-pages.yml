@@ -1,0 +1,38 @@
+name: deploy
+
+# 代码提交到main分支时触发github action
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest                                     
+    steps:                                                     
+        - name: Checkout                                      
+          uses: actions/checkout@v4
+          with:
+              fetch-depth: 0
+
+        - name: Update Submodule
+          run: git submodule update --init --recursive
+
+        - name: Setup Hugo
+          uses: peaceiris/actions-hugo@v3
+          with:
+              hugo-version: '0.144.2'                           
+              extended: true                                   
+
+        - name: Build Web                                      
+          run: hugo -E                                          
+
+        - name: Deploy Web                                      
+          uses: peaceiris/actions-gh-pages@v4
+          with:
+              PERSONAL_TOKEN: ${{ secrets.BLOG_GEN }}
+              EXTERNAL_REPOSITORY: liushuliang/liushuliang.github.io
+              PUBLISH_BRANCH: web
+              PUBLISH_DIR: ./public
+              commit_message: auto deploy
