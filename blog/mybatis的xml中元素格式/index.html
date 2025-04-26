@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="mybatis的xml文件中有许多大于小于各种符号，需要使用OGNL标签">
+<title>MyBatis的XML中元素格式</title>
+
+<link rel='canonical' href='https://liushuliang.github.com/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/'>
+
+<link rel="stylesheet" href="/scss/style.min.26e8b125ecdf6ceab3628650c7b2c2191feb29a11756a455eea95c3217bec5b3.css"><meta property='og:title' content="MyBatis的XML中元素格式">
+<meta property='og:description' content="mybatis的xml文件中有许多大于小于各种符号，需要使用OGNL标签">
+<meta property='og:url' content='https://liushuliang.github.com/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/'>
+<meta property='og:site_name' content='刘公子的建安百科书'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-07T10:46:34&#43;00:00'/><meta property='article:modified_time' content='2024-11-07T10:46:34&#43;00:00'/><meta property='og:image' content='https://liushuliang.github.com/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index.jpg' />
+<meta name="twitter:title" content="MyBatis的XML中元素格式">
+<meta name="twitter:description" content="mybatis的xml文件中有许多大于小于各种符号，需要使用OGNL标签"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://liushuliang.github.com/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index.jpg' />
+    <link rel="shortcut icon" href="/book.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+<script>
+    (function () {
+        const colorSchemeKey = 'StackColorScheme';
+        localStorage.setItem(colorSchemeKey, "light");
+    })();
+</script><script>
+    (function () {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_90ce7e41de2e853e.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">刘公子的建安百科书</a></h1>
+            <h2 class="site-description">不以物喜，不以己悲。</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#解决办法">解决办法</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/">
+                <img src="/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index_hu_5f460f66e1533d1e.jpg"
+                        srcset="/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index_hu_5f460f66e1533d1e.jpg 800w, /blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index_hu_9a5196e805f3c86a.jpg 1600w"
+                        width="800" 
+                        height="1067" 
+                        loading="lazy"
+                        alt="Featured image of post MyBatis的XML中元素格式" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/">MyBatis的XML中元素格式</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            mybatis的xml文件中有许多大于小于各种符号，需要使用OGNL标签
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 07, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="背景">背景
+</h2><p>在使用MyBatis根据时间范围<strong>动态SQL拼接</strong>查询数据库时报错：Caused by: Caused by: org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.（元素内容必须由格式正确的字符数据或标记组成。）</p>
+<h2 id="解决办法">解决办法
+</h2><p>MyBatis 在编写动态SQL的时候，是基于OGNL的。</p>
+<ol>
+<li>不改变符号，依然使用 “ &gt; ” 或者 “ &lt; ” ，则需要使用 OGNL 标签，将该符号包起来，可以是包裹单个符号，也可以将整句包裹寄来，示例SQL如下：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="k">select</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="s2">&#34;getLoginLogByPage&#34;</span><span class="w"> </span><span class="n">resultType</span><span class="o">=</span><span class="s2">&#34;com.mcp.entity.LoginLog&#34;</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">SELECT</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">job_number</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">createDate</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">ip_addr</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">remark</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">FROM</span><span class="w"> </span><span class="n">loginlog</span><span class="w"> </span><span class="n">l</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="o">&lt;</span><span class="k">where</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&lt;</span><span class="k">if</span><span class="w"> </span><span class="n">test</span><span class="o">=</span><span class="s2">&#34;jobNumber != null&#34;</span><span class="w"> </span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="o">&lt;!</span><span class="p">[</span><span class="n">CDATA</span><span class="p">[</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">job_number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">#</span><span class="err">{</span><span class="n">jobNumber</span><span class="err">}</span><span class="p">]]</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&lt;/</span><span class="k">if</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="o">&lt;/</span><span class="k">where</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">today_date</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">ip_address</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;/</span><span class="k">select</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>使用 OGNL 语法表达式，在 OGNL 语法表达式中不能直接写符号，需要要使用其转义后的字符，对应如下：</li>
+</ol>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>符号</th>
+          <th>转义字符</th>
+          <th style="text-align: center">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&lt;</td>
+          <td>&amp;lt;</td>
+          <td style="text-align: center">小于</td>
+      </tr>
+      <tr>
+          <td>&lt;=</td>
+          <td>&amp;lt;=</td>
+          <td style="text-align: center">小于等于</td>
+      </tr>
+      <tr>
+          <td>&gt;</td>
+          <td>&amp;gt;</td>
+          <td style="text-align: center">大于</td>
+      </tr>
+      <tr>
+          <td>&gt;=</td>
+          <td>&amp;gt;=</td>
+          <td style="text-align: center">大于等于</td>
+      </tr>
+      <tr>
+          <td>&amp;</td>
+          <td>&amp;amp;</td>
+          <td style="text-align: center">逻辑与</td>
+      </tr>
+      <tr>
+          <td>&lsquo;xxx&rsquo;</td>
+          <td>&amp;apos;</td>
+          <td style="text-align: center">单引号</td>
+      </tr>
+      <tr>
+          <td>&ldquo;xxx&rdquo;</td>
+          <td>&amp;quot;</td>
+          <td style="text-align: center">双引号</td>
+      </tr>
+  </tbody>
+</table></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="k">select</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="s2">&#34;getLoginLogByPage&#34;</span><span class="w"> </span><span class="n">resultType</span><span class="o">=</span><span class="s2">&#34;com.mcp.entity.LoginLog&#34;</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">SELECT</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">job_number</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">createDate</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">ip_addr</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">remark</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">FROM</span><span class="w"> </span><span class="n">loginlog</span><span class="w"> </span><span class="n">l</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="o">&lt;</span><span class="k">where</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&lt;</span><span class="k">if</span><span class="w"> </span><span class="n">test</span><span class="o">=</span><span class="s2">&#34;jobNumber != null&#34;</span><span class="w"> </span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="k">and</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">job_number</span><span class="w"> </span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="w"> </span><span class="o">#</span><span class="err">{</span><span class="n">jobNumber</span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&lt;/</span><span class="k">if</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="o">&lt;/</span><span class="k">where</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">today_date</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">.</span><span class="n">ip_address</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;/</span><span class="k">select</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>参考的这篇文章：https://blog.csdn.net/Hello_World_QWP/article/details/86513179</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 记录每一天
+    </section>
+    
+    <section class="powerby">
+        
+            记录美好一天 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script><script type="text/javascript" src="/ts/custom.f2979a93a325fecf9605263bd141398a311c8e23388ed7dcff74f92f7e632866.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
