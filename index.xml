@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>刘公子的建安百科书</title>
-        <link>https://liushuliang.github.com/</link>
+        <link>https://liushuliang.github.io/</link>
         <description>Recent content on 刘公子的建安百科书</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>记录每一天</copyright>
-        <lastBuildDate>Thu, 06 Mar 2025 17:38:48 +0000</lastBuildDate><atom:link href="https://liushuliang.github.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 06 Mar 2025 17:38:48 +0000</lastBuildDate><atom:link href="https://liushuliang.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MySQL事务执行卡住</title>
-        <link>https://liushuliang.github.com/blog/2025030617/</link>
+        <link>https://liushuliang.github.io/blog/2025030617/</link>
         <pubDate>Thu, 06 Mar 2025 17:38:48 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/2025030617/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/2025030617/index.jpg" alt="Featured image of post MySQL事务执行卡住" /&gt;&lt;h2 id=&#34;问题&#34;&gt;问题
+        <guid>https://liushuliang.github.io/blog/2025030617/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/2025030617/index.jpg" alt="Featured image of post MySQL事务执行卡住" /&gt;&lt;h2 id=&#34;问题&#34;&gt;问题
 &lt;/h2&gt;&lt;p&gt;我今天执行一个方法，该方法有&lt;code&gt;@Transactional(rollbackFor = Exception.class)&lt;/code&gt;,方法执行没有报错，在返回之后提交事务，会执行到&lt;code&gt;private native int socketRead0(FileDescriptor fd, byte b[], int off, int len, int timeout)&lt;/code&gt;阻塞起来，程序无法进行，接口报错超时。&lt;/p&gt;
 &lt;h2 id=&#34;解决办法&#34;&gt;解决办法：
 &lt;/h2&gt;&lt;p&gt;我重启了MySQL服务，就正常了，治标不治本。&lt;/p&gt;
@@ -25,11 +25,11 @@
         </item>
         <item>
         <title>MySQL和Oracdatetime</title>
-        <link>https://liushuliang.github.com/blog/mysql%E5%92%8Coracdatetime/</link>
+        <link>https://liushuliang.github.io/blog/mysql%E5%92%8Coracdatetime/</link>
         <pubDate>Thu, 27 Feb 2025 09:59:16 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/mysql%E5%92%8Coracdatetime/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/mysql%E5%92%8Coracdatetime/index.jpg" alt="Featured image of post MySQL和Oracdatetime" /&gt;&lt;h2 id=&#34;如何把一个时间字符串转为数据库中datetime类型&#34;&gt;如何把一个时间字符串转为数据库中datetime类型
+        <guid>https://liushuliang.github.io/blog/mysql%E5%92%8Coracdatetime/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/mysql%E5%92%8Coracdatetime/index.jpg" alt="Featured image of post MySQL和Oracdatetime" /&gt;&lt;h2 id=&#34;如何把一个时间字符串转为数据库中datetime类型&#34;&gt;如何把一个时间字符串转为数据库中datetime类型
 &lt;/h2&gt;&lt;p&gt;MySQL中不存在&lt;code&gt;TO_DATE(str,format)&lt;/code&gt;方法，但是可以使用&lt;code&gt;STR_TO_DATE(str,format)&lt;/code&gt;方法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -52,11 +52,11 @@
         </item>
         <item>
         <title>记一次使用BiConsumer记录</title>
-        <link>https://liushuliang.github.com/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/</link>
+        <link>https://liushuliang.github.io/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Thu, 20 Feb 2025 15:17:11 +0800</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/index.JPG" alt="Featured image of post 记一次使用BiConsumer记录" /&gt;&lt;h1 id=&#34;记一次使用biconsumer记录&#34;&gt;记一次使用BiConsumer记录
+        <guid>https://liushuliang.github.io/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/index.JPG" alt="Featured image of post 记一次使用BiConsumer记录" /&gt;&lt;h1 id=&#34;记一次使用biconsumer记录&#34;&gt;记一次使用BiConsumer记录
 &lt;/h1&gt;&lt;h2 id=&#34;遇到的问题&#34;&gt;遇到的问题
 &lt;/h2&gt;&lt;p&gt;在对接HL7中过程中遇到了一段代码，非常繁琐，想找找优化代码的方案，询问了ChatGPT，回答了这个接口。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -133,11 +133,11 @@
         </item>
         <item>
         <title>mybatis多数据源问题</title>
-        <link>https://liushuliang.github.com/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/</link>
+        <link>https://liushuliang.github.io/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/</link>
         <pubDate>Tue, 11 Feb 2025 11:27:26 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/index.jpg" alt="Featured image of post mybatis多数据源问题" /&gt;&lt;h1 id=&#34;mybatis多数据源问题&#34;&gt;mybatis多数据源问题
+        <guid>https://liushuliang.github.io/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/index.jpg" alt="Featured image of post mybatis多数据源问题" /&gt;&lt;h1 id=&#34;mybatis多数据源问题&#34;&gt;mybatis多数据源问题
 &lt;/h1&gt;&lt;h2 id=&#34;配置&#34;&gt;配置
 &lt;/h2&gt;&lt;p&gt;参考网站（https://baomidou.com/guides/dynamic-datasource/）&lt;/p&gt;
 &lt;p&gt;还有原理解析的一个参考网站（https://www.cnblogs.com/fnlingnzb-learner/p/16805784.html）&lt;/p&gt;
@@ -150,11 +150,11 @@
         </item>
         <item>
         <title>摩尔投票</title>
-        <link>https://liushuliang.github.com/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/</link>
+        <link>https://liushuliang.github.io/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/</link>
         <pubDate>Mon, 16 Dec 2024 10:18:53 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/index.jpg" alt="Featured image of post 摩尔投票" /&gt;&lt;p&gt;摩尔投票一般用于找绝对众数。在数列p中出现次数严格大于p/2的数就是绝对众数。&lt;/p&gt;
+        <guid>https://liushuliang.github.io/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/index.jpg" alt="Featured image of post 摩尔投票" /&gt;&lt;p&gt;摩尔投票一般用于找绝对众数。在数列p中出现次数严格大于p/2的数就是绝对众数。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;可以使用map统计每个数字出现次数&lt;/p&gt;
 &lt;p&gt;使用排序，取中间数字&lt;/p&gt;&lt;/blockquote&gt;
@@ -164,11 +164,11 @@
         </item>
         <item>
         <title>异或运算——找单独的数</title>
-        <link>https://liushuliang.github.com/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/</link>
+        <link>https://liushuliang.github.io/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/</link>
         <pubDate>Wed, 13 Nov 2024 15:04:30 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/index.jpg" alt="Featured image of post 异或运算——找单独的数" /&gt;&lt;h2 id=&#34;异或与或都是按位运算&#34;&gt;异或、与、或都是按位运算。
+        <guid>https://liushuliang.github.io/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/index.jpg" alt="Featured image of post 异或运算——找单独的数" /&gt;&lt;h2 id=&#34;异或与或都是按位运算&#34;&gt;异或、与、或都是按位运算。
 &lt;/h2&gt;&lt;p&gt;或运算有两种情况会导致结果为&lt;code&gt;true&lt;/code&gt;，分别是：1. 都为true；2. 一个为true，一个为false。为了区分这种情况引入了异或&lt;code&gt;^&lt;/code&gt;，这样或的第一种全相同则为false，而不同则为true，也就是说异或主要用于判断两个值是否为&lt;strong&gt;不同&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;异或运算规律&#34;&gt;异或运算规律
 &lt;/h2&gt;&lt;p&gt;由于相同为0，不同为1.&lt;/p&gt;
@@ -206,11 +206,11 @@
         </item>
         <item>
         <title>MyBatis的XML中元素格式</title>
-        <link>https://liushuliang.github.com/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/</link>
+        <link>https://liushuliang.github.io/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/</link>
         <pubDate>Thu, 07 Nov 2024 10:46:34 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index.jpg" alt="Featured image of post MyBatis的XML中元素格式" /&gt;&lt;h2 id=&#34;背景&#34;&gt;背景
+        <guid>https://liushuliang.github.io/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index.jpg" alt="Featured image of post MyBatis的XML中元素格式" /&gt;&lt;h2 id=&#34;背景&#34;&gt;背景
 &lt;/h2&gt;&lt;p&gt;在使用MyBatis根据时间范围&lt;strong&gt;动态SQL拼接&lt;/strong&gt;查询数据库时报错：Caused by: Caused by: org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.（元素内容必须由格式正确的字符数据或标记组成。）&lt;/p&gt;
 &lt;h2 id=&#34;解决办法&#34;&gt;解决办法
 &lt;/h2&gt;&lt;p&gt;MyBatis 在编写动态SQL的时候，是基于OGNL的。&lt;/p&gt;
@@ -330,11 +330,11 @@
         </item>
         <item>
         <title>Git提交规范</title>
-        <link>https://liushuliang.github.com/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</link>
+        <link>https://liushuliang.github.io/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</link>
         <pubDate>Thu, 07 Nov 2024 15:17:11 +0800</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/index.jpg" alt="Featured image of post Git提交规范" /&gt;&lt;blockquote&gt;
+        <guid>https://liushuliang.github.io/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/index.jpg" alt="Featured image of post Git提交规范" /&gt;&lt;blockquote&gt;
 &lt;p&gt;feat: 新功能（feature）&lt;br&gt;
 fix: 修补bug&lt;br&gt;
 docs: 文档（documentation）&lt;br&gt;
@@ -350,11 +350,11 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>SpringBoot和Netty遇到的问题</title>
-        <link>https://liushuliang.github.com/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+        <link>https://liushuliang.github.io/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
         <pubDate>Sat, 12 Oct 2024 15:28:46 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/index.jpg" alt="Featured image of post SpringBoot和Netty遇到的问题" /&gt;&lt;blockquote&gt;
+        <guid>https://liushuliang.github.io/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/index.jpg" alt="Featured image of post SpringBoot和Netty遇到的问题" /&gt;&lt;blockquote&gt;
 &lt;p&gt;在工作中，使用netty来开发遇到了两个问题记录一下&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;启动问题&#34;&gt;启动问题
 &lt;/h2&gt;&lt;p&gt;如果直接注册到容器中启动，如下代码所示，那么Netty会阻塞springboot，导致服务并未完全启动。&lt;/p&gt;
@@ -432,12 +432,12 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>IDEA远程DEBUG调试</title>
-        <link>https://liushuliang.github.com/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/</link>
+        <link>https://liushuliang.github.io/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/</link>
         <pubDate>Fri, 26 Jul 2024 09:40:03 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/index.jpg" alt="Featured image of post IDEA远程DEBUG调试" /&gt;&lt;h2 id=&#34;在idea中配置&#34;&gt;在IDEA中配置
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.com/images/idea%e4%b8%addebug%e9%85%8d%e7%bd%ae.png&#34;
+        <guid>https://liushuliang.github.io/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/index.jpg" alt="Featured image of post IDEA远程DEBUG调试" /&gt;&lt;h2 id=&#34;在idea中配置&#34;&gt;在IDEA中配置
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/images/idea%e4%b8%addebug%e9%85%8d%e7%bd%ae.png&#34;
 	
 	
 	
@@ -466,11 +466,11 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>lombok链式编程</title>
-        <link>https://liushuliang.github.com/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</link>
+        <link>https://liushuliang.github.io/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</link>
         <pubDate>Fri, 26 Jul 2024 09:40:03 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/index.jpg" alt="Featured image of post lombok链式编程" /&gt;&lt;h1 id=&#34;lombok链式编程可以一直点set方法&#34;&gt;lombok链式编程；可以一直点set方法
+        <guid>https://liushuliang.github.io/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/index.jpg" alt="Featured image of post lombok链式编程" /&gt;&lt;h1 id=&#34;lombok链式编程可以一直点set方法&#34;&gt;lombok链式编程；可以一直点set方法
 &lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -491,11 +491,11 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>Mybatis的注解@Param</title>
-        <link>https://liushuliang.github.com/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/</link>
+        <link>https://liushuliang.github.io/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/</link>
         <pubDate>Fri, 26 Jul 2024 09:40:03 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/index.jpg" alt="Featured image of post Mybatis的注解@Param" /&gt;&lt;h2 id=&#34;mybatis多参数传递-四种情况需要加param&#34;&gt;MyBatis多参数传递 四种情况需要加@Param
+        <guid>https://liushuliang.github.io/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/index.jpg" alt="Featured image of post Mybatis的注解@Param" /&gt;&lt;h2 id=&#34;mybatis多参数传递-四种情况需要加param&#34;&gt;MyBatis多参数传递 四种情况需要加@Param
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;方法有多个参数，需要使用@Param注解。&lt;/li&gt;
 &lt;li&gt;当需要给参数取别名时，需要使用@Param注解。&lt;/li&gt;
@@ -535,11 +535,11 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>Java常用工具类代码</title>
-        <link>https://liushuliang.github.com/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/</link>
+        <link>https://liushuliang.github.io/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/</link>
         <pubDate>Tue, 23 Jul 2024 17:20:49 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/index.jpg" alt="Featured image of post Java常用工具类代码" /&gt;&lt;h2 id=&#34;常用方法&#34;&gt;常用方法
+        <guid>https://liushuliang.github.io/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/index.jpg" alt="Featured image of post Java常用工具类代码" /&gt;&lt;h2 id=&#34;常用方法&#34;&gt;常用方法
 &lt;/h2&gt;&lt;h3 id=&#34;objectutilisempty&#34;&gt;&lt;code&gt;ObjectUtil.isEmpty()&lt;/code&gt;
 &lt;/h3&gt;&lt;p&gt;比较笼统的判断是否为空，不属于下面类型的仅仅判断是否为null&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -591,15 +591,15 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>咸亨国际面试</title>
-        <link>https://liushuliang.github.com/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/</link>
+        <link>https://liushuliang.github.io/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/</link>
         <pubDate>Thu, 11 Jul 2024 14:15:40 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/home.jpg" alt="Featured image of post 咸亨国际面试" /&gt;&lt;h2 id=&#34;final关键字&#34;&gt;final关键字
+        <guid>https://liushuliang.github.io/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/home.jpg" alt="Featured image of post 咸亨国际面试" /&gt;&lt;h2 id=&#34;final关键字&#34;&gt;final关键字
 &lt;/h2&gt;&lt;h3 id=&#34;基本用法&#34;&gt;基本用法
 &lt;/h3&gt;&lt;h4 id=&#34;修饰类&#34;&gt;修饰类
 &lt;/h4&gt;&lt;p&gt;当用final修饰一个类时，表明这个类不能被继承。也就是说，如果一个类你永远不会让他被继承，就可以用final进行修饰。final类中的成员变量可以根据需要设为final，但是要注意final类中的所有成员方法都会被隐式地指定为final方法。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.com/images/final%e7%b1%bb%e6%97%a0%e6%b3%95%e7%bb%a7%e6%89%bf.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/images/final%e7%b1%bb%e6%97%a0%e6%b3%95%e7%bb%a7%e6%89%bf.png&#34;
 	
 	
 	
@@ -619,7 +619,7 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 &lt;h3 id=&#34;深入理解final关键字&#34;&gt;深入理解final关键字
 &lt;/h3&gt;&lt;h4 id=&#34;类的final变量和普通变量有什么区别&#34;&gt;类的final变量和普通变量有什么区别
 &lt;/h4&gt;&lt;p&gt;当用final作用于类的成员变量时，成员变量（注意是类的成员变量，局部变量只需要保证在使用之前被初始化赋值即可）必须在定义时或者构造器中进行初始化赋值，而且final变量一旦被初始化赋值之后，就不能再被赋值了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.com/images/final%e5%8f%98%e9%87%8f%e6%97%a0%e6%b3%95%e4%bf%ae%e6%94%b9.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/images/final%e5%8f%98%e9%87%8f%e6%97%a0%e6%b3%95%e4%bf%ae%e6%94%b9.png&#34;
 	
 	
 	
@@ -687,14 +687,14 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>毕业典礼</title>
-        <link>https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/</link>
+        <link>https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/</link>
         <pubDate>Tue, 25 Jun 2024 21:52:38 +0800</pubDate>
         
-        <guid>https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/</guid>
-        <description>&lt;img src="https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index.jpg" alt="Featured image of post 毕业典礼" /&gt;&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1.jpg&#34;
+        <guid>https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/</guid>
+        <description>&lt;img src="https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index.jpg" alt="Featured image of post 毕业典礼" /&gt;&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1.jpg&#34;
 	width=&#34;3024&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1_hu_c3fb1d1deeac9911.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1_hu_8f1ad6c1c5ce1aeb.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1_hu_c3fb1d1deeac9911.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1_hu_8f1ad6c1c5ce1aeb.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -704,10 +704,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-grow=&#34;75&#34;
 		data-flex-basis=&#34;180px&#34;
 	
-&gt;&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2.jpg&#34;
+&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;3024&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2_hu_a04240a9afdb401c.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2_hu_44ddbef7770672a9.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2_hu_a04240a9afdb401c.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2_hu_44ddbef7770672a9.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -717,10 +717,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index.jpg&#34;
+&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index.jpg&#34;
 	width=&#34;1800&#34;
 	height=&#34;1200&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index_hu_7086b8d9c1e2b863.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index_hu_ec56fd05830c1afb.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index_hu_7086b8d9c1e2b863.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index_hu_ec56fd05830c1afb.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -731,10 +731,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-basis=&#34;360px&#34;
 	
 &gt;&lt;br&gt;
-&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4.jpg&#34;
+&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;3024&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4_hu_6864314c4a74b309.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4_hu_821d2e5e2f9e4a00.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4_hu_6864314c4a74b309.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4_hu_821d2e5e2f9e4a00.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -744,10 +744,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5.jpg&#34;
+&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;3024&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5_hu_b94d93511536a290.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5_hu_49e79c0c35fda091.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5_hu_b94d93511536a290.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5_hu_49e79c0c35fda091.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -757,10 +757,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6.jpg&#34;
+&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6.jpg&#34;
 	width=&#34;3024&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6_hu_9db135b80c68b629.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6_hu_592fb2d2949bad83.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6_hu_9db135b80c68b629.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6_hu_592fb2d2949bad83.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -771,10 +771,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-basis=&#34;180px&#34;
 	
 &gt;&lt;br&gt;
-&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7.jpg&#34;
+&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7.jpg&#34;
 	width=&#34;4284&#34;
 	height=&#34;5712&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7_hu_3a831d8bf078a0b0.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7_hu_8873ddf3bc223969.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7_hu_3a831d8bf078a0b0.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7_hu_8873ddf3bc223969.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -784,10 +784,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-grow=&#34;75&#34;
 		data-flex-basis=&#34;180px&#34;
 	
-&gt;&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8.jpg&#34;
+&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8.jpg&#34;
 	width=&#34;3024&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8_hu_3ac5838d838d27b9.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8_hu_2b314e018c9ca2bc.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8_hu_3ac5838d838d27b9.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8_hu_2b314e018c9ca2bc.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -797,10 +797,10 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 		data-flex-grow=&#34;75&#34;
 		data-flex-basis=&#34;180px&#34;
 	
-&gt;&lt;img src=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9.jpg&#34;
+&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9.jpg&#34;
 	width=&#34;3024&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9_hu_cdc31792b4c3513a.jpg 480w, https://liushuliang.github.com/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9_hu_54c28cdaa5418cc2.jpg 1024w&#34;
+	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9_hu_cdc31792b4c3513a.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9_hu_54c28cdaa5418cc2.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;毕业&#34;
@@ -814,26 +814,26 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>归档</title>
-        <link>https://liushuliang.github.com/archives/</link>
+        <link>https://liushuliang.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/archives/</guid>
+        <guid>https://liushuliang.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://liushuliang.github.com/%E5%85%B3%E4%BA%8E/</link>
+        <link>https://liushuliang.github.io/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>https://liushuliang.github.io/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;p&gt;记录美好生活！&lt;/p&gt;</description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://liushuliang.github.com/search/</link>
+        <link>https://liushuliang.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://liushuliang.github.com/search/</guid>
+        <guid>https://liushuliang.github.io/search/</guid>
         <description></description>
         </item>
         

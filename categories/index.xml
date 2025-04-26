@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 刘公子的建安百科书</title>
-        <link>https://liushuliang.github.com/categories/</link>
+        <link>https://liushuliang.github.io/categories/</link>
         <description>Recent content in Categories on 刘公子的建安百科书</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>记录每一天</copyright><atom:link href="https://liushuliang.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>记录每一天</copyright><atom:link href="https://liushuliang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
