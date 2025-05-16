@@ -2,11 +2,8 @@
 title: 咸亨国际面试
 date: 2024-07-11 14:15:40
 description: "刚毕业，面试的一家规模比较大的公司，一面的时候问的问题。"
-image: home.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20240711.jpg
+slug: /20240711
 ---
 ## final关键字
 

@@ -2,11 +2,8 @@
 title: "Java常用工具类代码"
 description: 常用的java代码，记录一下
 date: 2024-07-23 17:20:49
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20240723.jpg
+slug: /20240723
 ---
 
 ## 常用方法

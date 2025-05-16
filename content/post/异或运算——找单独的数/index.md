@@ -2,11 +2,8 @@
 title: "异或运算——找单独的数"
 description: 一道算法题目
 date: 2024-11-13 15:04:30
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20241113.jpg
+slug: /20241113
 ---
 
 ## 异或、与、或都是按位运算。

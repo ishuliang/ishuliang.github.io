@@ -2,11 +2,8 @@
 title: "摩尔投票"
 description: 
 date: 2024-12-16 10:18:53
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20241216.jpg
+slug: /20241216
 ---
 
 摩尔投票一般用于找绝对众数。在数列p中出现次数严格大于p/2的数就是绝对众数。

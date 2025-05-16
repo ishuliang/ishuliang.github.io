@@ -1,12 +1,9 @@
 ---
 title: lombok链式编程
 description: "@Accessors(chain = true)注解"
-date: 2024-07-26 09:40:03
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+date: 2024-07-27 09:40:03
+image: 20240727.jpg
+slug: /20240727
 ---
 
 # lombok链式编程；可以一直点set方法

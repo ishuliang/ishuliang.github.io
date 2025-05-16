@@ -2,11 +2,8 @@
 title: "记一次使用BiConsumer记录"
 description: "使用BigConsumer优化代码"
 date: 2025-02-20T15:17:11+08:00
-image: index.JPG
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20250220.JPG
+slug: /20250220
 ---
 
 # 记一次使用BiConsumer记录

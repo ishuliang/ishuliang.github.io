@@ -1,12 +1,9 @@
 ---
 title: MyBatis的XML中元素格式
-date: 2024-11-07 10:46:34
+date: 2024-11-08 10:46:34
 description: "mybatis的xml文件中有许多大于小于各种符号，需要使用OGNL标签"
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20241108.jpg
+slug: /20241108
 ---
 
 

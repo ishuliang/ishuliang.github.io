@@ -2,11 +2,8 @@
 title: "Git提交规范"
 description: git提交的一些类型
 date: 2024-11-07T15:17:11+08:00
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20241107.jpg
+slug: 20241107
 ---
 
 > feat: 新功能（feature）<br>

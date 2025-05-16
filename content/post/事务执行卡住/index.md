@@ -2,8 +2,8 @@
 description: "在工作中遇到了一个接口长时间没反应，最后定位到sql语句执行卡住"
 title: "MySQL事务执行卡住"
 date: 2025-03-06 17:38:48
-image: index.jpg
-slug: 2025030617
+image: 20250306.jpg
+slug: 20250306
 ---
 ## 问题
 

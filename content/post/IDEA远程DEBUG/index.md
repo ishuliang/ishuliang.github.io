@@ -2,11 +2,8 @@
 title: "IDEA远程DEBUG调试"
 description: 使用idea远程debug已经发版的程序
 date: 2024-07-26 09:40:03
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+image: 20240726.jpg
+slug: /20240726
 ---
 
 ## 在IDEA中配置

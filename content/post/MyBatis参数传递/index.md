@@ -1,16 +1,12 @@
 ---
-title: Mybatis的注解@Param
-description: "@Param注解"
-date: 2024-07-26 09:40:03
-image: index.jpg
-math: false
-hidden: false
-comments: false
-draft: false
+title: Mybatis参数传递
+description: "@Param注解用法"
+date: 2024-07-28 09:40:03
+image: 20240728.jpg
+slug: /20240728
 ---
 
 ## MyBatis多参数传递 四种情况需要加@Param
-
 1. 方法有多个参数，需要使用@Param注解。
 2. 当需要给参数取别名时，需要使用@Param注解。
 3. XML中的SQL使用了`$`,参数中也需要使用@Param。
