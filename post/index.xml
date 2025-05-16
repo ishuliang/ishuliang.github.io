@@ -2,32 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on 刘公子的建安百科书</title>
-        <link>https://liushuliang.github.io/post/</link>
+        <link>https://127.0.0.1/post/</link>
         <description>Recent content in Posts on 刘公子的建安百科书</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>记录每一天</copyright>
-        <lastBuildDate>Mon, 05 May 2025 22:00:00 +0000</lastBuildDate><atom:link href="https://liushuliang.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>上海三日游</title>
-        <link>https://liushuliang.github.io/blog/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/</link>
-        <pubDate>Mon, 05 May 2025 22:00:00 +0000</pubDate>
+        <lastBuildDate>Wed, 14 May 2025 14:40:41 +0800</lastBuildDate><atom:link href="https://127.0.0.1/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>配置文件中的特殊字符</title>
+        <link>https://127.0.0.1/content/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6/</link>
+        <pubDate>Wed, 14 May 2025 14:40:41 +0800</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/</guid>
-        <description>&lt;img src="https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/index.JPG" alt="Featured image of post 上海三日游" /&gt;&lt;section class=&#34;article-content&#34;&gt;
-    &lt;p class=&#34;no-text&#34;&gt;&lt;div class=&#34;gallery&#34;&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/1.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/1.JPG&#34; width=&#34;5712&#34; height=&#34;4284&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/1.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/1.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;美食&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;美食&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/2.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/2.JPG&#34; width=&#34;5712&#34; height=&#34;4284&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/2.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/2.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;外滩&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;外滩&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/3.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/3.JPG&#34; width=&#34;2316&#34; height=&#34;3088&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/3.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/3.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;三件套&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;三件套&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;br&gt;
-&lt;div class=&#34;gallery&#34;&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/4.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/4.JPG&#34; width=&#34;4284&#34; height=&#34;5712&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/4.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/4.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;朋友&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;朋友&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/5.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/5.JPG&#34; width=&#34;4284&#34; height=&#34;5712&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/5.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/5.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;我&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;我&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/6.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/6.JPG&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/6.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/6.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;上海欢迎你&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;上海欢迎你&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;br&gt;
-&lt;div class=&#34;gallery&#34;&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/7.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/7.JPG&#34; width=&#34;4284&#34; height=&#34;5712&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/7.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/7.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;武康大楼&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;武康大楼&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/9.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/9.jpg&#34; width=&#34;4284&#34; height=&#34;5712&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/9.jpg 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/9.jpg 1024w&#34; loading=&#34;lazy&#34; alt=&#34;三件套&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;三件套&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/10.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/10.jpg&#34; width=&#34;4284&#34; height=&#34;5712&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/10.jpg 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/10.jpg 1024w&#34; loading=&#34;lazy&#34; alt=&#34;我&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;我&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;br&gt;
-&lt;div class=&#34;gallery&#34;&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/11.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/11.JPG&#34; width=&#34;5712&#34; height=&#34;4284&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/11.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/11.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;上海&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;上海&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/12.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/12.JPG&#34; width=&#34;4284&#34; height=&#34;5712&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/12.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/12.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;东方明珠&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;东方明珠&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/13.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/13.JPG&#34; width=&#34;5712&#34; height=&#34;4284&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/13.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/13.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;红色记忆&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;红色记忆&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;br&gt;
-&lt;div class=&#34;gallery&#34;&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/14.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/14.JPG&#34; width=&#34;5712&#34; height=&#34;4284&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/14.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/14.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;红色记忆&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;红色记忆&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/15.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/15.JPG&#34; width=&#34;5712&#34; height=&#34;4284&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/15.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/15.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;红色记忆&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;红色记忆&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;br&gt;
-&lt;div class=&#34;gallery&#34;&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 75; flex-basis: 180px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/16.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/16.JPG&#34; width=&#34;4284&#34; height=&#34;5712&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/16.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/16.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;红色记忆&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;75&#34; data-flex-basis=&#34;180px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;红色记忆&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/17.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/17.JPG&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/17.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/17.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;红色记忆&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;红色记忆&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure class=&#34;gallery-image&#34; style=&#34;flex-grow: 133; flex-basis: 320px;&#34;&gt;&lt;a href=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/index.JPG&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/index.JPG&#34; width=&#34;5712&#34; height=&#34;4284&#34; srcset=&#34;https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/index.JPG 480w, https://shuliang-blog.oss-cn-hangzhou.aliyuncs.com/%E4%B8%8A%E6%B5%B7%E4%B8%89%E6%97%A5%E6%B8%B8/index.JPG 1024w&#34; loading=&#34;lazy&#34; alt=&#34;红色记忆&#34; class=&#34;gallery-image&#34; data-flex-grow=&#34;133&#34; data-flex-basis=&#34;320px&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;红色记忆&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/p&gt;</description>
+        <guid>https://127.0.0.1/content/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6/20240514.jpg" alt="Featured image of post 配置文件中的特殊字符" /&gt;&lt;h1 id=&#34;yaml文件中key包含特殊字符&#34;&gt;yaml文件中key包含特殊字符
+&lt;/h1&gt;&lt;p&gt;在开发一个单位配置时，我想把他放到nacos上，每次读取配置文件，因为在yaml配置的key中包含特殊字符，比如：&lt;code&gt;+&lt;/code&gt;、&lt;code&gt;(&lt;/code&gt;、&lt;code&gt;)&lt;/code&gt;等等，所以在springboot项目读取到map集合里面时所有的的这些特殊字符莫名消失了，因此导致系统出错了。&lt;/p&gt;
+&lt;p&gt;解决办法&lt;/p&gt;
+&lt;p&gt;在写key时使用&lt;code&gt;&amp;quot;[]&amp;quot;&lt;/code&gt;将key值包起来&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 血气分析单位表：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;unit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pCO2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmHg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pO2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmHg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[K+]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[Na+]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[Ca++]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[Cl-]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Glu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Lac&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tHb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;g/dL&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sO2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Cel&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;FIO2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[pH(T)]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[pCO2(T)]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmHg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[HCO3-]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ABE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;SBE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[pO2(T)]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmHg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;[p50(act)]&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmHg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;AaDpO2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmHg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tO2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mmol/L&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;RI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@Data&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Component&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@ConfigurationProperties&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prefix&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;unit&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;UnitConfig&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;implements&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;InitializingBean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Map&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Override&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;afterPropertiesSet&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;throws&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Exception&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         </item>
         <item>
         <title>MySQL事务执行卡住</title>
-        <link>https://liushuliang.github.io/blog/2025030617/</link>
+        <link>https://127.0.0.1/content/20250306/</link>
         <pubDate>Thu, 06 Mar 2025 17:38:48 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/2025030617/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/2025030617/index.jpg" alt="Featured image of post MySQL事务执行卡住" /&gt;&lt;h2 id=&#34;问题&#34;&gt;问题
+        <guid>https://127.0.0.1/content/20250306/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20250306/20250306.jpg" alt="Featured image of post MySQL事务执行卡住" /&gt;&lt;h2 id=&#34;问题&#34;&gt;问题
 &lt;/h2&gt;&lt;p&gt;我今天执行一个方法，该方法有&lt;code&gt;@Transactional(rollbackFor = Exception.class)&lt;/code&gt;,方法执行没有报错，在返回之后提交事务，会执行到&lt;code&gt;private native int socketRead0(FileDescriptor fd, byte b[], int off, int len, int timeout)&lt;/code&gt;阻塞起来，程序无法进行，接口报错超时。&lt;/p&gt;
 &lt;h2 id=&#34;解决办法&#34;&gt;解决办法：
 &lt;/h2&gt;&lt;p&gt;我重启了MySQL服务，就正常了，治标不治本。&lt;/p&gt;
@@ -39,11 +123,11 @@
         </item>
         <item>
         <title>MySQL和Oracdatetime</title>
-        <link>https://liushuliang.github.io/blog/mysql%E5%92%8Coracdatetime/</link>
+        <link>https://127.0.0.1/content/20250227/</link>
         <pubDate>Thu, 27 Feb 2025 09:59:16 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/mysql%E5%92%8Coracdatetime/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/mysql%E5%92%8Coracdatetime/index.jpg" alt="Featured image of post MySQL和Oracdatetime" /&gt;&lt;h2 id=&#34;如何把一个时间字符串转为数据库中datetime类型&#34;&gt;如何把一个时间字符串转为数据库中datetime类型
+        <guid>https://127.0.0.1/content/20250227/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20250227/20250227.jpg" alt="Featured image of post MySQL和Oracdatetime" /&gt;&lt;h2 id=&#34;如何把一个时间字符串转为数据库中datetime类型&#34;&gt;如何把一个时间字符串转为数据库中datetime类型
 &lt;/h2&gt;&lt;p&gt;MySQL中不存在&lt;code&gt;TO_DATE(str,format)&lt;/code&gt;方法，但是可以使用&lt;code&gt;STR_TO_DATE(str,format)&lt;/code&gt;方法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -66,11 +150,11 @@
         </item>
         <item>
         <title>记一次使用BiConsumer记录</title>
-        <link>https://liushuliang.github.io/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/</link>
+        <link>https://127.0.0.1/content/20250220/</link>
         <pubDate>Thu, 20 Feb 2025 15:17:11 +0800</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8biconsumer%E8%AE%B0%E5%BD%95/index.JPG" alt="Featured image of post 记一次使用BiConsumer记录" /&gt;&lt;h1 id=&#34;记一次使用biconsumer记录&#34;&gt;记一次使用BiConsumer记录
+        <guid>https://127.0.0.1/content/20250220/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20250220/20250220.jpg" alt="Featured image of post 记一次使用BiConsumer记录" /&gt;&lt;h1 id=&#34;记一次使用biconsumer记录&#34;&gt;记一次使用BiConsumer记录
 &lt;/h1&gt;&lt;h2 id=&#34;遇到的问题&#34;&gt;遇到的问题
 &lt;/h2&gt;&lt;p&gt;在对接HL7中过程中遇到了一段代码，非常繁琐，想找找优化代码的方案，询问了ChatGPT，回答了这个接口。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -147,11 +231,11 @@
         </item>
         <item>
         <title>mybatis多数据源问题</title>
-        <link>https://liushuliang.github.io/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/</link>
+        <link>https://127.0.0.1/content/20250211/</link>
         <pubDate>Tue, 11 Feb 2025 11:27:26 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/mybatis%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%97%AE%E9%A2%98/index.jpg" alt="Featured image of post mybatis多数据源问题" /&gt;&lt;h1 id=&#34;mybatis多数据源问题&#34;&gt;mybatis多数据源问题
+        <guid>https://127.0.0.1/content/20250211/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20250211/20250211.jpg" alt="Featured image of post mybatis多数据源问题" /&gt;&lt;h1 id=&#34;mybatis多数据源问题&#34;&gt;mybatis多数据源问题
 &lt;/h1&gt;&lt;h2 id=&#34;配置&#34;&gt;配置
 &lt;/h2&gt;&lt;p&gt;参考网站（https://baomidou.com/guides/dynamic-datasource/）&lt;/p&gt;
 &lt;p&gt;还有原理解析的一个参考网站（https://www.cnblogs.com/fnlingnzb-learner/p/16805784.html）&lt;/p&gt;
@@ -164,11 +248,11 @@
         </item>
         <item>
         <title>摩尔投票</title>
-        <link>https://liushuliang.github.io/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/</link>
+        <link>https://127.0.0.1/content/20241216/</link>
         <pubDate>Mon, 16 Dec 2024 10:18:53 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8/index.jpg" alt="Featured image of post 摩尔投票" /&gt;&lt;p&gt;摩尔投票一般用于找绝对众数。在数列p中出现次数严格大于p/2的数就是绝对众数。&lt;/p&gt;
+        <guid>https://127.0.0.1/content/20241216/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20241216/20241216.jpg" alt="Featured image of post 摩尔投票" /&gt;&lt;p&gt;摩尔投票一般用于找绝对众数。在数列p中出现次数严格大于p/2的数就是绝对众数。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;可以使用map统计每个数字出现次数&lt;/p&gt;
 &lt;p&gt;使用排序，取中间数字&lt;/p&gt;&lt;/blockquote&gt;
@@ -178,11 +262,11 @@
         </item>
         <item>
         <title>异或运算——找单独的数</title>
-        <link>https://liushuliang.github.io/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/</link>
+        <link>https://127.0.0.1/content/20241113/</link>
         <pubDate>Wed, 13 Nov 2024 15:04:30 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E6%89%BE%E5%8D%95%E7%8B%AC%E7%9A%84%E6%95%B0/index.jpg" alt="Featured image of post 异或运算——找单独的数" /&gt;&lt;h2 id=&#34;异或与或都是按位运算&#34;&gt;异或、与、或都是按位运算。
+        <guid>https://127.0.0.1/content/20241113/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20241113/20241113.jpg" alt="Featured image of post 异或运算——找单独的数" /&gt;&lt;h2 id=&#34;异或与或都是按位运算&#34;&gt;异或、与、或都是按位运算。
 &lt;/h2&gt;&lt;p&gt;或运算有两种情况会导致结果为&lt;code&gt;true&lt;/code&gt;，分别是：1. 都为true；2. 一个为true，一个为false。为了区分这种情况引入了异或&lt;code&gt;^&lt;/code&gt;，这样或的第一种全相同则为false，而不同则为true，也就是说异或主要用于判断两个值是否为&lt;strong&gt;不同&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;异或运算规律&#34;&gt;异或运算规律
 &lt;/h2&gt;&lt;p&gt;由于相同为0，不同为1.&lt;/p&gt;
@@ -220,11 +304,11 @@
         </item>
         <item>
         <title>MyBatis的XML中元素格式</title>
-        <link>https://liushuliang.github.io/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/</link>
-        <pubDate>Thu, 07 Nov 2024 10:46:34 +0000</pubDate>
+        <link>https://127.0.0.1/content/20241108/</link>
+        <pubDate>Fri, 08 Nov 2024 10:46:34 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/mybatis%E7%9A%84xml%E4%B8%AD%E5%85%83%E7%B4%A0%E6%A0%BC%E5%BC%8F/index.jpg" alt="Featured image of post MyBatis的XML中元素格式" /&gt;&lt;h2 id=&#34;背景&#34;&gt;背景
+        <guid>https://127.0.0.1/content/20241108/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20241108/20241108.jpg" alt="Featured image of post MyBatis的XML中元素格式" /&gt;&lt;h2 id=&#34;背景&#34;&gt;背景
 &lt;/h2&gt;&lt;p&gt;在使用MyBatis根据时间范围&lt;strong&gt;动态SQL拼接&lt;/strong&gt;查询数据库时报错：Caused by: Caused by: org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.（元素内容必须由格式正确的字符数据或标记组成。）&lt;/p&gt;
 &lt;h2 id=&#34;解决办法&#34;&gt;解决办法
 &lt;/h2&gt;&lt;p&gt;MyBatis 在编写动态SQL的时候，是基于OGNL的。&lt;/p&gt;
@@ -344,11 +428,11 @@
         </item>
         <item>
         <title>Git提交规范</title>
-        <link>https://liushuliang.github.io/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</link>
+        <link>https://127.0.0.1/content/20241107/</link>
         <pubDate>Thu, 07 Nov 2024 15:17:11 +0800</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/git%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/index.jpg" alt="Featured image of post Git提交规范" /&gt;&lt;blockquote&gt;
+        <guid>https://127.0.0.1/content/20241107/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20241107/20241107.jpg" alt="Featured image of post Git提交规范" /&gt;&lt;blockquote&gt;
 &lt;p&gt;feat: 新功能（feature）&lt;br&gt;
 fix: 修补bug&lt;br&gt;
 docs: 文档（documentation）&lt;br&gt;
@@ -364,11 +448,11 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>SpringBoot和Netty遇到的问题</title>
-        <link>https://liushuliang.github.io/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+        <link>https://127.0.0.1/content/20241012/</link>
         <pubDate>Sat, 12 Oct 2024 15:28:46 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/springboot%E5%92%8Cnetty%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/index.jpg" alt="Featured image of post SpringBoot和Netty遇到的问题" /&gt;&lt;blockquote&gt;
+        <guid>https://127.0.0.1/content/20241012/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20241012/20241012.jpg" alt="Featured image of post SpringBoot和Netty遇到的问题" /&gt;&lt;blockquote&gt;
 &lt;p&gt;在工作中，使用netty来开发遇到了两个问题记录一下&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;启动问题&#34;&gt;启动问题
 &lt;/h2&gt;&lt;p&gt;如果直接注册到容器中启动，如下代码所示，那么Netty会阻塞springboot，导致服务并未完全启动。&lt;/p&gt;
@@ -445,71 +529,12 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 &lt;/div&gt;&lt;p&gt;解决办法就是异步处理，在启动方法添加注解@Async，并且在Spring Boot启动类上开启异步注解，代码如下：&lt;/p&gt;</description>
         </item>
         <item>
-        <title>IDEA远程DEBUG调试</title>
-        <link>https://liushuliang.github.io/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/</link>
-        <pubDate>Fri, 26 Jul 2024 09:40:03 +0000</pubDate>
+        <title>Mybatis参数传递</title>
+        <link>https://127.0.0.1/content/20240728/</link>
+        <pubDate>Sun, 28 Jul 2024 09:40:03 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/idea%E8%BF%9C%E7%A8%8Bdebug%E8%B0%83%E8%AF%95/index.jpg" alt="Featured image of post IDEA远程DEBUG调试" /&gt;&lt;h2 id=&#34;在idea中配置&#34;&gt;在IDEA中配置
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/images/idea%e4%b8%addebug%e9%85%8d%e7%bd%ae.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;修改启动脚本&#34;&gt;修改启动脚本
-&lt;/h2&gt;&lt;p&gt;使用第一步得到的脚本：-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
-改造启动脚本命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nohup java &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;-agentlib:jdwp&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;transport&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;dt_socket,server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;y,suspend&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;n,address&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;50055&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;-jar remote-debug-0.0.1-SNAPSHOT.jar &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;注意在windows中用 ^ 来进行换行&lt;/p&gt;
-&lt;h2 id=&#34;可以开始调试了&#34;&gt;可以开始调试了
-&lt;/h2&gt;</description>
-        </item>
-        <item>
-        <title>lombok链式编程</title>
-        <link>https://liushuliang.github.io/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</link>
-        <pubDate>Fri, 26 Jul 2024 09:40:03 +0000</pubDate>
-        
-        <guid>https://liushuliang.github.io/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/lombok%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/index.jpg" alt="Featured image of post lombok链式编程" /&gt;&lt;h1 id=&#34;lombok链式编程可以一直点set方法&#34;&gt;lombok链式编程；可以一直点set方法
-&lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PatientPacsApplyPO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setPatientIdent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;patientIdent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setHospitalNumber&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hospitalNumber&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setGender&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gender&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setPatientName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;patientName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;要实现上述代码可以添加注解&lt;code&gt;@Accessors(chain = true)&lt;/code&gt;&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Mybatis的注解@Param</title>
-        <link>https://liushuliang.github.io/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/</link>
-        <pubDate>Fri, 26 Jul 2024 09:40:03 +0000</pubDate>
-        
-        <guid>https://liushuliang.github.io/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/mybatis%E7%9A%84%E6%B3%A8%E8%A7%A3@param/index.jpg" alt="Featured image of post Mybatis的注解@Param" /&gt;&lt;h2 id=&#34;mybatis多参数传递-四种情况需要加param&#34;&gt;MyBatis多参数传递 四种情况需要加@Param
+        <guid>https://127.0.0.1/content/20240728/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20240728/20240728.jpg" alt="Featured image of post Mybatis参数传递" /&gt;&lt;h2 id=&#34;mybatis多参数传递-四种情况需要加param&#34;&gt;MyBatis多参数传递 四种情况需要加@Param
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;方法有多个参数，需要使用@Param注解。&lt;/li&gt;
 &lt;li&gt;当需要给参数取别名时，需要使用@Param注解。&lt;/li&gt;
@@ -548,12 +573,71 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 &lt;/h2&gt;&lt;p&gt;是因为编译的问题，有时候接口通过编译，参数名称发生了变化，所以会报错找不到该参数，有时候又可以正常运行是因为idea编译采用了&lt;strong&gt;强制保持方法参数变量明&lt;/strong&gt;&lt;/p&gt;</description>
         </item>
         <item>
+        <title>lombok链式编程</title>
+        <link>https://127.0.0.1/content/20240727/</link>
+        <pubDate>Sat, 27 Jul 2024 09:40:03 +0000</pubDate>
+        
+        <guid>https://127.0.0.1/content/20240727/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20240727/20240727.jpg" alt="Featured image of post lombok链式编程" /&gt;&lt;h1 id=&#34;lombok链式编程可以一直点set方法&#34;&gt;lombok链式编程；可以一直点set方法
+&lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PatientPacsApplyPO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setPatientIdent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;patientIdent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setHospitalNumber&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hospitalNumber&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setGender&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gender&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setPatientName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;patientName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;要实现上述代码可以添加注解&lt;code&gt;@Accessors(chain = true)&lt;/code&gt;&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>IDEA远程DEBUG调试</title>
+        <link>https://127.0.0.1/content/20240726/</link>
+        <pubDate>Fri, 26 Jul 2024 09:40:03 +0000</pubDate>
+        
+        <guid>https://127.0.0.1/content/20240726/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20240726/20240726.jpg" alt="Featured image of post IDEA远程DEBUG调试" /&gt;&lt;h2 id=&#34;在idea中配置&#34;&gt;在IDEA中配置
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://127.0.0.1/images/idea%e4%b8%addebug%e9%85%8d%e7%bd%ae.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;修改启动脚本&#34;&gt;修改启动脚本
+&lt;/h2&gt;&lt;p&gt;使用第一步得到的脚本：-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+改造启动脚本命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nohup java &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;-agentlib:jdwp&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;transport&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;dt_socket,server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;y,suspend&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;n,address&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;50055&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;-jar remote-debug-0.0.1-SNAPSHOT.jar &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意在windows中用 ^ 来进行换行&lt;/p&gt;
+&lt;h2 id=&#34;可以开始调试了&#34;&gt;可以开始调试了
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>Java常用工具类代码</title>
-        <link>https://liushuliang.github.io/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/</link>
+        <link>https://127.0.0.1/content/20240723/</link>
         <pubDate>Tue, 23 Jul 2024 17:20:49 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BB%A3%E7%A0%81/index.jpg" alt="Featured image of post Java常用工具类代码" /&gt;&lt;h2 id=&#34;常用方法&#34;&gt;常用方法
+        <guid>https://127.0.0.1/content/20240723/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20240723/20240723.jpg" alt="Featured image of post Java常用工具类代码" /&gt;&lt;h2 id=&#34;常用方法&#34;&gt;常用方法
 &lt;/h2&gt;&lt;h3 id=&#34;objectutilisempty&#34;&gt;&lt;code&gt;ObjectUtil.isEmpty()&lt;/code&gt;
 &lt;/h3&gt;&lt;p&gt;比较笼统的判断是否为空，不属于下面类型的仅仅判断是否为null&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -605,15 +689,15 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>咸亨国际面试</title>
-        <link>https://liushuliang.github.io/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/</link>
+        <link>https://127.0.0.1/content/20240711/</link>
         <pubDate>Thu, 11 Jul 2024 14:15:40 +0000</pubDate>
         
-        <guid>https://liushuliang.github.io/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/%E5%92%B8%E4%BA%A8%E5%9B%BD%E9%99%85%E9%9D%A2%E8%AF%95/home.jpg" alt="Featured image of post 咸亨国际面试" /&gt;&lt;h2 id=&#34;final关键字&#34;&gt;final关键字
+        <guid>https://127.0.0.1/content/20240711/</guid>
+        <description>&lt;img src="https://127.0.0.1/content/20240711/20240711.jpg" alt="Featured image of post 咸亨国际面试" /&gt;&lt;h2 id=&#34;final关键字&#34;&gt;final关键字
 &lt;/h2&gt;&lt;h3 id=&#34;基本用法&#34;&gt;基本用法
 &lt;/h3&gt;&lt;h4 id=&#34;修饰类&#34;&gt;修饰类
 &lt;/h4&gt;&lt;p&gt;当用final修饰一个类时，表明这个类不能被继承。也就是说，如果一个类你永远不会让他被继承，就可以用final进行修饰。final类中的成员变量可以根据需要设为final，但是要注意final类中的所有成员方法都会被隐式地指定为final方法。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/images/final%e7%b1%bb%e6%97%a0%e6%b3%95%e7%bb%a7%e6%89%bf.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://127.0.0.1/images/final%e7%b1%bb%e6%97%a0%e6%b3%95%e7%bb%a7%e6%89%bf.png&#34;
 	
 	
 	
@@ -633,7 +717,7 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 &lt;h3 id=&#34;深入理解final关键字&#34;&gt;深入理解final关键字
 &lt;/h3&gt;&lt;h4 id=&#34;类的final变量和普通变量有什么区别&#34;&gt;类的final变量和普通变量有什么区别
 &lt;/h4&gt;&lt;p&gt;当用final作用于类的成员变量时，成员变量（注意是类的成员变量，局部变量只需要保证在使用之前被初始化赋值即可）必须在定义时或者构造器中进行初始化赋值，而且final变量一旦被初始化赋值之后，就不能再被赋值了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/images/final%e5%8f%98%e9%87%8f%e6%97%a0%e6%b3%95%e4%bf%ae%e6%94%b9.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://127.0.0.1/images/final%e5%8f%98%e9%87%8f%e6%97%a0%e6%b3%95%e4%bf%ae%e6%94%b9.png&#34;
 	
 	
 	
@@ -698,133 +782,6 @@ ci: 持续集成&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;static修饰的变量,又称为类变量,也就是说这个变量是属于类的,类的所有实例共享这个变量,可以直接通过类名.变量名的方式获取,静态变量在内存中只存在一份&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>毕业典礼</title>
-        <link>https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/</link>
-        <pubDate>Tue, 25 Jun 2024 21:52:38 +0800</pubDate>
-        
-        <guid>https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/</guid>
-        <description>&lt;img src="https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index.jpg" alt="Featured image of post 毕业典礼" /&gt;&lt;p&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1.jpg&#34;
-	width=&#34;3024&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1_hu_c3fb1d1deeac9911.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/1_hu_8f1ad6c1c5ce1aeb.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;75&#34;
-		data-flex-basis=&#34;180px&#34;
-	
-&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;3024&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2_hu_a04240a9afdb401c.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/2_hu_44ddbef7770672a9.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
-&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index.jpg&#34;
-	width=&#34;1800&#34;
-	height=&#34;1200&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index_hu_7086b8d9c1e2b863.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/index_hu_ec56fd05830c1afb.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;150&#34;
-		data-flex-basis=&#34;360px&#34;
-	
-&gt;&lt;br&gt;
-&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;3024&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4_hu_6864314c4a74b309.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/4_hu_821d2e5e2f9e4a00.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
-&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;3024&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5_hu_b94d93511536a290.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/5_hu_49e79c0c35fda091.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
-&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6.jpg&#34;
-	width=&#34;3024&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6_hu_9db135b80c68b629.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/6_hu_592fb2d2949bad83.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;75&#34;
-		data-flex-basis=&#34;180px&#34;
-	
-&gt;&lt;br&gt;
-&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7.jpg&#34;
-	width=&#34;4284&#34;
-	height=&#34;5712&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7_hu_3a831d8bf078a0b0.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/7_hu_8873ddf3bc223969.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;75&#34;
-		data-flex-basis=&#34;180px&#34;
-	
-&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8.jpg&#34;
-	width=&#34;3024&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8_hu_3ac5838d838d27b9.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/8_hu_2b314e018c9ca2bc.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;75&#34;
-		data-flex-basis=&#34;180px&#34;
-	
-&gt;&lt;img src=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9.jpg&#34;
-	width=&#34;3024&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9_hu_cdc31792b4c3513a.jpg 480w, https://liushuliang.github.io/blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/9_hu_54c28cdaa5418cc2.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;毕业&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;75&#34;
-		data-flex-basis=&#34;180px&#34;
-	
-&gt;&lt;/p&gt;</description>
         </item>
         
     </channel>
