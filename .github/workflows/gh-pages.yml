@@ -5,47 +5,47 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest                                     
-    steps:                                                     
-        - name: Checkout                                      
-          uses: actions/checkout@v4
-          with:
-              fetch-depth: 0
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-        - name: Update Submodule
-          run: git submodule update --init --recursive
+      - name: Update Submodule
+        run: git submodule update --init --recursive
 
-        - name: Setup Hugo
-          uses: peaceiris/actions-hugo@v3
-          with:
-              hugo-version: '0.144.2'                           
-              extended: true                                   
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.144.2"
+          extended: true
 
-        - name: Build Web                                      
-          run: hugo -E                                          
+      - name: Build Web
+        run: hugo -E
 
-        - name: Deploy Web                                      
-          uses: peaceiris/actions-gh-pages@v4
-          with:
-              PERSONAL_TOKEN: ${{ secrets.BLOG_GEN }}
-              EXTERNAL_REPOSITORY: liushuliang/liushuliang.github.io
-              PUBLISH_BRANCH: web
-              PUBLISH_DIR: ./public
-              commit_message: auto deploy
+      - name: Deploy Web
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          PERSONAL_TOKEN: ${{ secrets.BLOG_GEN }}
+          EXTERNAL_REPOSITORY: liushuliang/liushuliang.github.io
+          PUBLISH_BRANCH: web
+          PUBLISH_DIR: ./public
+          commit_message: auto deploy
 
-        - name: 配置阿里云OSS 
-          uses: yizhoumo/setup-ossutil@v2
-          with:
-            ossutil-version: 'latest'
-            endpoint: ${{ secrets.OSS_ENDPOINT }}
-            access-key-id: ${{ OSS_ID }}
-            access-key-secret: ${{ OSS_SECRET }}
+      - name: 配置阿里云OSS
+        uses: yizhoumo/setup-ossutil@v2
+        with:
+          ossutil-version: "latest"
+          endpoint: ${{ secrets.OSS_ENDPOINT }}
+          access-key-id: ${{ secrets.OSS_ID }}
+          access-key-secret: ${{ secrets.OSS_SECRET }}
 
-        - name: 上传资源
-          run: |
-            ossutil rm -rf oss://${{ secrets.OSS_BUCKET }}
-            ossutil cp -rf public oss://${{ secrets.OSS_BUCKET }}
+      - name: 上传资源
+        run: |
+          ossutil rm -rf oss://${{ secrets.OSS_BUCKET }}
+          ossutil cp -rf public oss://${{ secrets.OSS_BUCKET }}
