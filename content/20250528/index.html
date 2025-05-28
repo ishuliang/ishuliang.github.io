@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="背景\r用 leetcode 练习 MySQL 时，使用 where 和 on 进行查询时返回结果不一样。\n实践\r定义了两个表 employee、bonus，建表语句：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 -- 创建员工表 CREATE TABLE Employee ( empId INT PRIMARY KEY, name VARCHAR(255), supervisor INT, salary INT ); -- 创建奖金表（empId 是 Employee.empId 的外键） CREATE TABLE Bonus ( empId INT PRIMARY KEY, bonus INT, FOREIGN KEY (empId) REFERENCES Employee(empId) ); 插入数据：\n">
+<title>Mysql中where和on总结</title>
+
+<link rel='canonical' href='https://127.0.0.1/content/20250528/'>
+
+<link rel="stylesheet" href="/scss/style.min.26e8b125ecdf6ceab3628650c7b2c2191feb29a11756a455eea95c3217bec5b3.css"><meta property='og:title' content="Mysql中where和on总结">
+<meta property='og:description' content="背景\r用 leetcode 练习 MySQL 时，使用 where 和 on 进行查询时返回结果不一样。\n实践\r定义了两个表 employee、bonus，建表语句：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 -- 创建员工表 CREATE TABLE Employee ( empId INT PRIMARY KEY, name VARCHAR(255), supervisor INT, salary INT ); -- 创建奖金表（empId 是 Employee.empId 的外键） CREATE TABLE Bonus ( empId INT PRIMARY KEY, bonus INT, FOREIGN KEY (empId) REFERENCES Employee(empId) ); 插入数据：\n">
+<meta property='og:url' content='https://127.0.0.1/content/20250528/'>
+<meta property='og:site_name' content='刘公子的建安百科书'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-28T16:27:52&#43;08:00'/><meta property='article:modified_time' content='2025-05-28T16:27:52&#43;08:00'/><meta property='og:image' content='https://127.0.0.1/content/20250528/index.jpg' />
+<meta name="twitter:title" content="Mysql中where和on总结">
+<meta name="twitter:description" content="背景\r用 leetcode 练习 MySQL 时，使用 where 和 on 进行查询时返回结果不一样。\n实践\r定义了两个表 employee、bonus，建表语句：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 -- 创建员工表 CREATE TABLE Employee ( empId INT PRIMARY KEY, name VARCHAR(255), supervisor INT, salary INT ); -- 创建奖金表（empId 是 Employee.empId 的外键） CREATE TABLE Bonus ( empId INT PRIMARY KEY, bonus INT, FOREIGN KEY (empId) REFERENCES Employee(empId) ); 插入数据：\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://127.0.0.1/content/20250528/index.jpg' />
+    <link rel="shortcut icon" href="/book.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+<script>
+    (function () {
+        const colorSchemeKey = 'StackColorScheme';
+        localStorage.setItem(colorSchemeKey, "light");
+    })();
+</script><script>
+    (function () {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_2f487982b44d682b.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">刘公子的建安百科书</a></h1>
+            <h2 class="site-description">不以物喜，不以己悲。</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#实践">实践</a></li>
+    <li><a href="#查阅资料">查阅资料</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/content/20250528/">
+                <img src="/content/20250528/index_hu_5e57e6e8622aeba7.jpg"
+                        srcset="/content/20250528/index_hu_5e57e6e8622aeba7.jpg 800w, /content/20250528/index_hu_8e23c48b556e3855.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post Mysql中where和on总结" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/content/20250528/">Mysql中where和on总结</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 28, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="背景">背景
+</h2><p>用 leetcode 练习 MySQL 时，使用 where 和 on 进行查询时返回结果不一样。</p>
+<h2 id="实践">实践
+</h2><p>定义了两个表 employee、bonus，建表语句：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 创建员工表
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Employee</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">empId</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">supervisor</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">salary</span><span class="w"> </span><span class="nb">INT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 创建奖金表（empId 是 Employee.empId 的外键）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Bonus</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">empId</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">bonus</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">empId</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Employee</span><span class="p">(</span><span class="n">empId</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>插入数据：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="n">leetcode</span><span class="o">`</span><span class="p">.</span><span class="o">`</span><span class="n">employee</span><span class="o">`</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">empId</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">name</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">supervisor</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">salary</span><span class="o">`</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="n">leetcode</span><span class="o">`</span><span class="p">.</span><span class="o">`</span><span class="n">employee</span><span class="o">`</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">empId</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">name</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">supervisor</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">salary</span><span class="o">`</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Dan&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="n">leetcode</span><span class="o">`</span><span class="p">.</span><span class="o">`</span><span class="n">employee</span><span class="o">`</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">empId</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">name</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">supervisor</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">salary</span><span class="o">`</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Brad&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w"> </span><span class="mi">4000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="n">leetcode</span><span class="o">`</span><span class="p">.</span><span class="o">`</span><span class="n">employee</span><span class="o">`</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">empId</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">name</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">supervisor</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">salary</span><span class="o">`</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Thomas&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="n">leetcode</span><span class="o">`</span><span class="p">.</span><span class="o">`</span><span class="n">bonus</span><span class="o">`</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">empId</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">bonus</span><span class="o">`</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="n">leetcode</span><span class="o">`</span><span class="p">.</span><span class="o">`</span><span class="n">bonus</span><span class="o">`</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">empId</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="o">`</span><span class="n">bonus</span><span class="o">`</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>查询奖金低于 1000 的员工
+在 on 中写条件查询：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">employee</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">a</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">bonus</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">empId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">empId</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">AND</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">bonus</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>![on中加条件查询结果]（Snipaste_2025-05-28_16-36-38.png）
+在 where 中写查询条件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">employee</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">a</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">bonus</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">empId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">empId</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">bonus</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/Snipaste_2025-05-28_16-36-35.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="where中加条件查询结果"
+	
+	
+></p>
+<p>在 where 中会明显少记录。</p>
+<h2 id="查阅资料">查阅资料
+</h2><p>我看了一些网上大神写的以及自己总结了一下：
+on 的条件先进行筛选，对右表进行，然后再进行连接，再使用 where 对连接后的表进行筛选，因此 on 中添加<code>b.bonus &lt; 1000</code>，会先选中 bonus 表中的唯一一条符合的数据，和左边进行笛卡尔积，左表中对不上的直接用 null 补全，所以会有很多 null 数据，而且导致了明明 thomas 的奖金小于 1000 也出现在了结果集中。
+where 条件是对笛卡尔积进行筛选的，因此会计算乘积，然后选出其中小于 1000 的数据，但是这样会把那些奖金是 null 的人排除，</p>
+<h2 id="总结">总结
+</h2><p>如果想对右表限制就在 on 中添加条件，相应会导致左表在右表中无法匹配到行导致为 null，如果对左边限制就在 where 中添加条件，这样才能过滤掉，而在 on 中添加的限制左表的条件不会生效的，因为 on 只针对关联表也就是右表！
+注意区分左、右连接！！！</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 记录每一天
+    </section>
+    
+    <section class="powerby">
+        
+            记录美好一天 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script><script type="text/javascript" src="/ts/custom.f2979a93a325fecf9605263bd141398a311c8e23388ed7dcff74f92f7e632866.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
