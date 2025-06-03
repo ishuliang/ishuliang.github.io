@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shuliang.asia/p/5%E6%9C%88%E6%B8%B8%E4%B8%8A%E6%B5%B7/</loc>
+    <lastmod>2025-06-02T16:18:11+08:00</lastmod>
+  </url><url>
     <loc>https://shuliang.asia/categories/</loc>
-    <lastmod>2025-05-28T16:27:52+08:00</lastmod>
+    <lastmod>2025-06-02T16:18:11+08:00</lastmod>
+  </url><url>
+    <loc>https://shuliang.asia/post/</loc>
+    <lastmod>2025-06-02T16:18:11+08:00</lastmod>
+  </url><url>
+    <loc>https://shuliang.asia/</loc>
+    <lastmod>2025-06-02T16:18:11+08:00</lastmod>
+  </url><url>
+    <loc>https://shuliang.asia/categories/life/</loc>
+    <lastmod>2025-06-02T16:18:11+08:00</lastmod>
   </url><url>
     <loc>https://shuliang.asia/p/20250528/</loc>
     <lastmod>2025-05-28T16:27:52+08:00</lastmod>
   </url><url>
-    <loc>https://shuliang.asia/post/</loc>
-    <lastmod>2025-05-28T16:27:52+08:00</lastmod>
-  </url><url>
     <loc>https://shuliang.asia/categories/work/</loc>
-    <lastmod>2025-05-28T16:27:52+08:00</lastmod>
-  </url><url>
-    <loc>https://shuliang.asia/</loc>
     <lastmod>2025-05-28T16:27:52+08:00</lastmod>
   </url><url>
     <loc>https://shuliang.asia/p/20250527/</loc>
@@ -64,9 +70,6 @@
   </url><url>
     <loc>https://shuliang.asia/p/20240723/</loc>
     <lastmod>2024-07-23T17:20:49+00:00</lastmod>
-  </url><url>
-    <loc>https://shuliang.asia/categories/life/</loc>
-    <lastmod>2024-07-11T14:15:40+00:00</lastmod>
   </url><url>
     <loc>https://shuliang.asia/p/20240711/</loc>
     <lastmod>2024-07-11T14:15:40+00:00</lastmod>
