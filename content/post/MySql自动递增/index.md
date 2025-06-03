@@ -4,6 +4,7 @@ description: mysql自动递增传0一会触发自动递增
 date: 2025-05-19T14:15:19+08:00
 image: 20250519.JPG
 slug: 20250519
+categories: "work"
 ---
 
 # mysql 自动自增

@@ -4,6 +4,7 @@ description: 一道算法题目
 date: 2024-11-13 15:04:30
 image: 20241113.jpg
 slug: /20241113
+categories: "work"
 ---
 
 ## 异或、与、或都是按位运算。

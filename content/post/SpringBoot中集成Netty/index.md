@@ -4,6 +4,7 @@ date: 2024-10-12 15:28:46
 image: 20241012.jpg
 description: "工作中需要netty来接收hl7报文，启动时遇到了问题，无法启动springboot。"
 slug: /20241012
+categories: "work"
 ---
 > 在工作中，使用netty来开发遇到了两个问题记录一下
 

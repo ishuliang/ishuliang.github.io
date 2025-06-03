@@ -4,6 +4,7 @@ description: "使用BigConsumer优化代码"
 date: 2025-02-20T15:17:11+08:00
 image: 20250220.JPG
 slug: /20250220
+categories: "work"
 ---
 
 # 记一次使用BiConsumer记录

@@ -4,6 +4,7 @@ description: 常用的java代码，记录一下
 date: 2024-07-23 17:20:49
 image: 20240723.jpg
 slug: /20240723
+categories: "work"
 ---
 
 ## 常用方法

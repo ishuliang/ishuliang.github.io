@@ -4,6 +4,7 @@ date: 2024-07-11 14:15:40
 description: "刚毕业，面试的一家规模比较大的公司，一面的时候问的问题。"
 image: 20240711.jpg
 slug: /20240711
+categories: "life"
 ---
 ## final关键字
 

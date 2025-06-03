@@ -3,6 +3,7 @@ title: 配置文件中的特殊字符
 description: yaml文件的特殊字符处理方式
 date: 2025-05-14T14:40:41+08:00
 image: 20240514.jpg
+categories: "work"
 ---
 
 # yaml文件中key包含特殊字符

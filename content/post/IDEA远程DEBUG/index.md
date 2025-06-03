@@ -4,6 +4,7 @@ description: 使用idea远程debug已经发版的程序
 date: 2024-07-26 09:40:03
 image: 20240726.jpg
 slug: /20240726
+categories: "work"
 ---
 
 ## 在IDEA中配置

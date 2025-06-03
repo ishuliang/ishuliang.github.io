@@ -4,6 +4,7 @@ description: "@Accessors(chain = true)注解"
 date: 2024-07-27 09:40:03
 image: 20240727.jpg
 slug: /20240727
+categories: "work"
 ---
 
 # lombok链式编程；可以一直点set方法

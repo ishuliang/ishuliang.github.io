@@ -4,6 +4,7 @@ description: "@Param注解用法"
 date: 2024-07-28 09:40:03
 image: 20240728.jpg
 slug: /20240728
+categories: "work"
 ---
 
 ## MyBatis多参数传递 四种情况需要加@Param

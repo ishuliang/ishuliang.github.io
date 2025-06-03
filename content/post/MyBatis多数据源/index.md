@@ -4,6 +4,7 @@ date: 2025-02-11 11:27:26
 description: "mybatis多数据源是怎么实现的，为什么有些方法可以实现，有些不行"
 image: 20250211.jpg
 slug: /20250211
+categories: "work"
 ---
 
 # mybatis多数据源问题

@@ -3,7 +3,8 @@ title: "Mysql中where和on总结"
 description:
 date: 2025-05-28T16:27:52+08:00
 image: index.jpg
-slug: 20250528
+slug: /20250528
+categories: "work"
 ---
 
 ## 背景
@@ -54,7 +55,7 @@ FROM
 	AND b.bonus < 1000
 ```
 
-![on中加条件查询结果]（Snipaste_2025-05-28_16-36-38.png）
+![on中加条件查询结果](Snipaste_2025-05-28_16-36-38.png)
 在 where 中写查询条件：
 
 ```sql

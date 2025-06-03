@@ -4,6 +4,7 @@ title: "MySQL事务执行卡住"
 date: 2025-03-06 17:38:48
 image: 20250306.jpg
 slug: 20250306
+categories: "work"
 ---
 ## 问题
 

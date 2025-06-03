@@ -4,6 +4,7 @@ description: 使用@AssertTrue(message = "")定义一个方法实现互斥验证
 date: 2025-05-27T17:46:31+08:00
 image: 20250527.jpg
 slug: 20250527
+categories: "work"
 ---
 
 # 互斥验证参数
