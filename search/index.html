@@ -4,26 +4,28 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
 <title>搜索</title>
 
-<link rel='canonical' href='https://127.0.0.1/search/'>
+<link rel='canonical' href='https://shuliang.asia/search/'>
 
-<link rel="stylesheet" href="/scss/style.min.26e8b125ecdf6ceab3628650c7b2c2191feb29a11756a455eea95c3217bec5b3.css"><meta property='og:title' content="搜索">
+<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="搜索">
 <meta property='og:description' content="">
-<meta property='og:url' content='https://127.0.0.1/search/'>
+<meta property='og:url' content='https://shuliang.asia/search/'>
 <meta property='og:site_name' content='刘公子的建安百科书'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="搜索">
-<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://127.0.0.1/search/index.json">
-    <link rel="shortcut icon" href="/book.ico" />
+<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://shuliang.asia/search/index.json">
+    <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="preload" href="/search/index.json" as="fetch" crossorigin="anonymous">
     </head>
     <body class="template-search">
-<script>
-    (function () {
-        const colorSchemeKey = 'StackColorScheme';
-        localStorage.setItem(colorSchemeKey, "light");
-    })();
-</script><script>
-    (function () {
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
         const colorSchemeKey = 'StackColorScheme';
         const colorSchemeItem = localStorage.getItem(colorSchemeKey);
         const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
@@ -36,7 +38,8 @@
             document.documentElement.dataset.scheme = 'light';
         }
     })();
-</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -45,52 +48,32 @@
 
     <header>
         
+        
+        <figure class="site-avatar">
+            <a href="/">
+                
+                
+
+                
+                
+                <img src="/img/avatar_hu_398ea5e8db8b8d7.jpg" width="300"
+                    height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                
+            </a>
             
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_2f487982b44d682b.jpg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-                    <span class="emoji">🍥</span>
-                
-            </figure>
+            <span class="emoji">😎</span>
             
+        </figure>
         
         
+
         <div class="site-meta">
             <h1 class="site-name"><a href="/">刘公子的建安百科书</a></h1>
-            <h2 class="site-description">不以物喜，不以己悲。</h2>
+            <h2 class="site-description">记录每一天</h2>
         </div>
     </header><ol class="menu" id="main-menu">
         
-        
-        
-        <li >
-            <a href='/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>主页</span>
-            </a>
-        </li>
         
         
         <li >
@@ -98,7 +81,7 @@
                 
                 
                 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="12" cy="7" r="4" />
   <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
@@ -117,7 +100,7 @@
                 
                 
                 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <rect x="3" y="4" width="18" height="4" rx="2" />
   <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
@@ -137,7 +120,7 @@
                 
                 
                 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="10" cy="10" r="7" />
   <line x1="21" y1="21" x2="15" y2="15" />
@@ -158,7 +141,6 @@
         </li>
     </ol>
 </aside>
-
             <main class="main full-width">
 <form action="/search/" class="search-form"data-json="/search/index.json">
     <p>
@@ -197,8 +179,6 @@
     </section>
     
     <section class="powerby">
-        
-            记录美好一天 <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
@@ -211,7 +191,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script><script type="text/javascript" src="/ts/custom.f2979a93a325fecf9605263bd141398a311c8e23388ed7dcff74f92f7e632866.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script><script type="text/javascript" src="/ts/custom.0a910474feb194de91b1326876a8f89cb34589b41e0a8f4241c091e273bb34e6.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -223,6 +203,14 @@
         document.head.appendChild(customFont);
     }());
 </script>
-
+<script src="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.css" crossorigin="anonymous" />
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
     </body>
 </html>
