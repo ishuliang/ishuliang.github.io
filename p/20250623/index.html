@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="@Param注解用法">
-<title>Mybatis参数传递</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="简单学了一下正则表达式，记一下字符用法。">
+<title>正则表达式学习</title>
 
-<link rel='canonical' href='https://shuliang.asia/p/20240728/'>
+<link rel='canonical' href='https://shuliang.asia/p/20250623/'>
 
-<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="Mybatis参数传递">
-<meta property='og:description' content="@Param注解用法">
-<meta property='og:url' content='https://shuliang.asia/p/20240728/'>
+<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="正则表达式学习">
+<meta property='og:description' content="简单学了一下正则表达式，记一下字符用法。">
+<meta property='og:url' content='https://shuliang.asia/p/20250623/'>
 <meta property='og:site_name' content='刘公子的建安百科书'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-07-28T09:40:03&#43;00:00'/><meta property='article:modified_time' content='2024-07-28T09:40:03&#43;00:00'/><meta property='og:image' content='https://shuliang.asia/p/20240728/20240728.jpg' />
-<meta name="twitter:title" content="Mybatis参数传递">
-<meta name="twitter:description" content="@Param注解用法"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://shuliang.asia/p/20240728/20240728.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-23T16:39:04&#43;08:00'/><meta property='article:modified_time' content='2025-06-23T16:39:04&#43;08:00'/><meta property='og:image' content='https://shuliang.asia/p/20250623/20250623.jpg' />
+<meta name="twitter:title" content="正则表达式学习">
+<meta name="twitter:description" content="简单学了一下正则表达式，记一下字符用法。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://shuliang.asia/p/20250623/20250623.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -166,8 +166,67 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#mybatis多参数传递-四种情况需要加param">MyBatis多参数传递 四种情况需要加@Param</a></li>
-    <li><a href="#为什么有时候不加param可以正常运行">为什么有时候不加@Param可以正常运行</a></li>
+    <li><a href="#基本匹配">基本匹配</a>
+      <ol>
+        <li><a href="#任何字符">任何字符</a></li>
+        <li><a href="#字符集abc">字符集<code>[abc]</code></a></li>
+        <li><a href="#否定字符集abc">否定字符集<code>[^abc]</code></a></li>
+        <li><a href="#字母范围a-z">字母范围<code>[a-z]</code></a></li>
+        <li><a href="#数字范围0-9">数字范围<code>[0-9]</code></a></li>
+      </ol>
+    </li>
+    <li><a href="#重复">重复</a>
+      <ol>
+        <li><a href="#星号">星号<code>*</code></a></li>
+        <li><a href="#加号">加号<code>+</code></a></li>
+        <li><a href="#问号">问号<code>?</code></a></li>
+        <li><a href="#大括号-1">大括号-1</a></li>
+        <li><a href="#大括号-2">大括号-2</a></li>
+        <li><a href="#大括号-3">大括号-3</a></li>
+      </ol>
+    </li>
+    <li><a href="#分组">分组</a>
+      <ol>
+        <li><a href="#括号分组">括号<code>()</code>分组</a></li>
+        <li><a href="#引用组">引用组</a></li>
+        <li><a href="#非捕获分组">非捕获分组</a></li>
+      </ol>
+    </li>
+    <li><a href="#特殊字符">特殊字符</a>
+      <ol>
+        <li><a href="#竖线">竖线<code>|</code></a></li>
+        <li><a href="#转义字符">转义字符<code>\</code></a></li>
+        <li><a href="#插入符">插入符<code>^</code></a></li>
+        <li><a href="#美元符号">美元符号<code>$</code></a></li>
+      </ol>
+    </li>
+    <li><a href="#单词字符">单词字符</a>
+      <ol>
+        <li><a href="#w"><code>\w</code></a></li>
+        <li><a href="#w-1"><code>\W</code></a></li>
+        <li><a href="#数字符d">数字符<code>\d</code></a></li>
+        <li><a href="#非数字符d">非数字符<code>\D</code></a></li>
+        <li><a href="#空白符s">空白符<code>\s</code></a></li>
+        <li><a href="#非空白符s">非空白符<code>\S</code></a></li>
+      </ol>
+    </li>
+    <li><a href="#零宽断言">零宽断言</a>
+      <ol>
+        <li><a href="#正向先行断言">正向先行断言<code>(?=)</code></a></li>
+        <li><a href="#负向先行断言">负向先行断言<code>(?!)</code></a></li>
+        <li><a href="#正向后行断言">正向后行断言<code>(?&lt;=)</code></a></li>
+        <li><a href="#负向后行断言">负向后行断言<code>(?&lt;!)</code></a></li>
+      </ol>
+    </li>
+    <li><a href="#标志">标志</a>
+      <ol>
+        <li><a href="#全局标志g">全局标志<code>g</code></a></li>
+        <li><a href="#多行标志m">多行标志<code>m</code></a></li>
+        <li><a href="#忽略大小写标志i">忽略大小写标志<code>i</code></a></li>
+        <li><a href="#贪婪匹配">贪婪匹配</a></li>
+        <li><a href="#懒惰匹配">懒惰匹配</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -182,13 +241,13 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/20240728/">
-                <img src="/p/20240728/20240728_hu_8f15ecdc40dc1544.jpg"
-                        srcset="/p/20240728/20240728_hu_8f15ecdc40dc1544.jpg 800w, /p/20240728/20240728_hu_23119a4b90b79c1d.jpg 1600w"
+            <a href="/p/20250623/">
+                <img src="/p/20250623/20250623_hu_b9ee2469ab26d916.jpg"
+                        srcset="/p/20250623/20250623_hu_b9ee2469ab26d916.jpg 800w, /p/20250623/20250623_hu_32b8b00158118f99.jpg 1600w"
                         width="800" 
                         height="600" 
                         loading="lazy"
-                        alt="Featured image of post Mybatis参数传递" />
+                        alt="Featured image of post 正则表达式学习" />
                 
             </a>
         </div>
@@ -207,12 +266,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/20240728/">Mybatis参数传递</a>
+            <a href="/p/20250623/">正则表达式学习</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            @Param注解用法
+            简单学了一下正则表达式，记一下字符用法。
         </h3>
         
     </div>
@@ -233,7 +292,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jul 28, 2024</time>
+                <time class="article-time--published">Jun 23, 2025</time>
             </div>
         
 
@@ -263,44 +322,85 @@
     <section class="article-content">
     
     
-    <h2 id="mybatis多参数传递-四种情况需要加param">MyBatis多参数传递 四种情况需要加@Param
-</h2><ol>
-<li>方法有多个参数，需要使用@Param注解。</li>
-<li>当需要给参数取别名时，需要使用@Param注解。</li>
-<li>XML中的SQL使用了<code>$</code>,参数中也需要使用@Param。</li>
-<li>动态 SQL ，如果在动态 SQL 中使用了参数作为变量，那么也需要 @Param 注解，即使你只有一个参数。</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//mapper 接口</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">List</span><span class="o">&lt;</span><span class="n">Device</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getDeviceListTest</span><span class="p">(</span><span class="nd">@Param</span><span class="p">(</span><span class="s">&#34;deviceId&#34;</span><span class="p">)</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">deviceId</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;!--</span><span class="n">mybatis的xml</span><span class="o">--&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;</span><span class="n">select</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="s">&#34;getDeviceListTest&#34;</span><span class="w"> </span><span class="n">parameterType</span><span class="o">=</span><span class="s">&#34;String&#34;</span><span class="w"> </span><span class="n">resultType</span><span class="o">=</span><span class="s">&#34;Device&#34;</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">t_device</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">&lt;</span><span class="n">where</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">           </span><span class="o">&lt;</span><span class="k">if</span><span class="w"> </span><span class="n">test</span><span class="o">=</span><span class="s">&#34;deviceId != null and deviceId != &#39;&#39;&#34;</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">               </span><span class="n">device_id</span><span class="o">=</span><span class="err">#</span><span class="p">{</span><span class="n">deviceId</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">           </span><span class="o">&lt;/</span><span class="k">if</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">&lt;/</span><span class="n">where</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="为什么有时候不加param可以正常运行">为什么有时候不加@Param可以正常运行
-</h2><p>是因为编译的问题，有时候接口通过编译，参数名称发生了变化，所以会报错找不到该参数，有时候又可以正常运行是因为idea编译采用了<strong>强制保持方法参数变量明</strong></p>
-<p>参考文章，这篇解释的详细一点：https://blog.csdn.net/neusoft2016/article/details/110818507</p>
+    <h1 id="正则表达式">正则表达式
+</h1><h2 id="基本匹配">基本匹配
+</h2><p>我们想要查找的字符或单词可以直接输入，就像搜索一样。例如，要找出文本中的 curious 一词，只需输入同样的内容。</p>
+<h3 id="任何字符">任何字符
+</h3><p>点<code>.</code>：允许匹配任何字符，包括特殊字符和空格</p>
+<h3 id="字符集abc">字符集<code>[abc]</code>
+</h3><p>如果一个词中的字符可以是各种字符，我们就将所有的可选字符写进中括号 [] 中。例如，为了查找文本中的所有单词，我们需要编写表达式，在 [] 中相邻地输入字符 a、e、i、o、u。</p>
+<h3 id="否定字符集abc">否定字符集<code>[^abc]</code>
+</h3><p>为了查找下方文本的所有单词（<code>ber</code> 和<code>bor</code> 除外），请在 [] 中的 ^ 后面并排输入 e 和 o。</p>
+<h3 id="字母范围a-z">字母范围<code>[a-z]</code>
+</h3><p>为了查找指定范围的字母，我们需要将起始字母和结束字母写进 <code>[] </code>中，中间用连字符<code>-</code>分隔。它区分大小写。请编写表达式，匹配<code>e</code>和<code>o</code>之间所有的小写字母，包括它们本身。</p>
+<h3 id="数字范围0-9">数字范围<code>[0-9]</code>
+</h3><p>为了查找指定范围的数字，我们需要在<code>[]</code>中输入起始和结束数字，中间用连字符<code>-</code>分隔。请编写表达式，匹配<code>3</code>到<code>6</code>之间的所有数字，包括它们本身。</p>
+<h2 id="重复">重复
+</h2><p>一些特殊字符用来指定一个字符在文本中重复的次数。它们分别是加号<code>+</code>、星号<code>*</code>和问号<code>?</code>。</p>
+<h3 id="星号">星号<code>*</code>
+</h3><p>在字符后面加上<code>*</code>，表示一个字符没有或者存在多次。</p>
+<h3 id="加号">加号<code>+</code>
+</h3><p>在字符后面加上<code>+</code>，表示一个字符出现一次或者多次</p>
+<h3 id="问号">问号<code>?</code>
+</h3><p>在字符后面加上<code>+</code>，表示一个字符可选，出现一次或者一次都没有</p>
+<h3 id="大括号-1">大括号-1
+</h3><p>用<code>{n}</code>编写表达式，匹配文本中位数为n的字符。</p>
+<h3 id="大括号-2">大括号-2
+</h3><p>用<code>{n,}</code>编写表达式，匹配文本中位数至少为n的字符。</p>
+<h3 id="大括号-3">大括号-3
+</h3><p>用<code>{n,m}</code>编写表达式，匹配文本中位数为n至m的字符。</p>
+<h2 id="分组">分组
+</h2><p>我们可以对一个表达式进行分组，并用这些分组来引用或执行一些规则。</p>
+<h3 id="括号分组">括号<code>()</code>分组
+</h3><p>使用括号包裹字符，实现分组</p>
+<h3 id="引用组">引用组
+</h3><p>使用<code>\1</code>来避免重复书写，这里1表示分组顺序。</p>
+<h3 id="非捕获分组">非捕获分组
+</h3><p>使用括号<code>(?:)</code>分组，确保它不会被引用捕获。</p>
+<h2 id="特殊字符">特殊字符
+</h2><h3 id="竖线">竖线<code>|</code>
+</h3><p>竖线允许一个表达式包含多个不同的分支。所有分支用<code>|</code>分隔。和在字符层面上运作的字符集<code>[abc]</code>不同，分支在表达式层面上运作。</p>
+<h3 id="转义字符">转义字符<code>\</code>
+</h3><p>在书写正则表达式时，我们会用到<code>{}[]\/+*.$^|?</code>这些特殊字符。为了匹配这些特殊字符本身，我们需要使用<code>\</code>进行转义。</p>
+<h3 id="插入符">插入符<code>^</code>
+</h3><p>匹配字符串的开始。如果仅仅需要查找行首字符，就在表达式前面添加<code>^</code>。</p>
+<h3 id="美元符号">美元符号<code>$</code>
+</h3><p>匹配字符串的结束。加在字符的后面。</p>
+<h2 id="单词字符">单词字符
+</h2><h3 id="w"><code>\w</code>
+</h3><p>匹配字母、数字、下划线。</p>
+<h3 id="w-1"><code>\W</code>
+</h3><p>匹配除字母、数字、下划线之外的字符。</p>
+<h3 id="数字符d">数字符<code>\d</code>
+</h3><p>仅匹配数字。</p>
+<h3 id="非数字符d">非数字符<code>\D</code>
+</h3><p>匹配除数字外的所有字符。</p>
+<h3 id="空白符s">空白符<code>\s</code>
+</h3><p>仅匹配空白字符。</p>
+<h3 id="非空白符s">非空白符<code>\S</code>
+</h3><p>匹配除空白符之外的字符。</p>
+<h2 id="零宽断言">零宽断言
+</h2><p>如果我们希望正在写的词语出现在另一个词语之前或之后，我们需要使用零宽断言。</p>
+<h3 id="正向先行断言">正向先行断言<code>(?=)</code>
+</h3><p>为了匹配后面有指定字符的值，我们可以在=后面写。放在字符后</p>
+<h3 id="负向先行断言">负向先行断言<code>(?!)</code>
+</h3><p>为了匹配后面没有有指定字符的值，我们可以在!后面写。</p>
+<h3 id="正向后行断言">正向后行断言<code>(?&lt;=)</code>
+</h3><p>为了匹配前面有指定字符的值，我们可以在=后面写。放在字符前</p>
+<h3 id="负向后行断言">负向后行断言<code>(?&lt;!)</code>
+</h3><p>为了匹配前面没有指定字符的值，我们可以在!后面写。</p>
+<h2 id="标志">标志
+</h2><p>标志改变表达式的输出。这就是标志也称为<code>修饰符</code>的原因。标志决定表达式是否将文本视作单独的行处理，是否区分大小写，或者是否查找所有匹配项。</p>
+<h3 id="全局标志g">全局标志<code>g</code>
+</h3><p>表达式以<code>//</code>包裹，在后面加g表示匹配全局符合要求的，否则只有一个匹配项。</p>
+<h3 id="多行标志m">多行标志<code>m</code>
+</h3><p>正则表达式将所有文本视作一行。但如果我们使用了多行标志，它就会单独处理每一行。</p>
+<h3 id="忽略大小写标志i">忽略大小写标志<code>i</code>
+</h3><p>为了使我们编写的表达式不再大小写敏感，我们必须启用<code>不区分大小写</code>标志。</p>
+<h3 id="贪婪匹配">贪婪匹配
+</h3><p>正则表达式默认执行贪婪匹配。这意味着匹配内容会尽可能长。</p>
+<h3 id="懒惰匹配">懒惰匹配
+</h3><p>与贪婪匹配不同，懒惰匹配在第一次匹配时停止。</p>
 
 </section>
 
@@ -322,30 +422,6 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/20250623/">
-        
-        
-            <div class="article-image">
-                <img src="/p/20250623/20250623.be232b65139e1c720d19c2adb03d48de_hu_69cf4e15d8b835c1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 正则表达式学习"
-                        data-key="/20250623" 
-                        data-hash="md5-viMrZROeHHINGcKtsD1I3g==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">正则表达式学习</h2>
-        </div>
-    </a>
-</article>
-
             
                 
 <article class="has-image">
@@ -438,6 +514,30 @@
 
         <div class="article-details">
             <h2 class="article-title">配置文件中的特殊字符</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/20250306/">
+        
+        
+            <div class="article-image">
+                <img src="/p/20250306/20250306.fcc1fefd7a0e6dd2eceace228583b724_hu_3ef7e33ac372f2d5.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post MySQL事务执行卡住"
+                        data-key="20250306" 
+                        data-hash="md5-/MH&#43;/XoObdLs6s4ihYO3JA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MySQL事务执行卡住</h2>
         </div>
     </a>
 </article>

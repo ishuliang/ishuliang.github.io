@@ -7,7 +7,94 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>记录每一天</copyright>
-        <lastBuildDate>Mon, 02 Jun 2025 16:18:11 +0800</lastBuildDate><atom:link href="https://shuliang.asia/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 23 Jun 2025 16:39:04 +0800</lastBuildDate><atom:link href="https://shuliang.asia/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>正则表达式学习</title>
+        <link>https://shuliang.asia/p/20250623/</link>
+        <pubDate>Mon, 23 Jun 2025 16:39:04 +0800</pubDate>
+        
+        <guid>https://shuliang.asia/p/20250623/</guid>
+        <description>&lt;img src="https://shuliang.asia/p/20250623/20250623.jpg" alt="Featured image of post 正则表达式学习" /&gt;&lt;h1 id=&#34;正则表达式&#34;&gt;正则表达式
+&lt;/h1&gt;&lt;h2 id=&#34;基本匹配&#34;&gt;基本匹配
+&lt;/h2&gt;&lt;p&gt;我们想要查找的字符或单词可以直接输入，就像搜索一样。例如，要找出文本中的 curious 一词，只需输入同样的内容。&lt;/p&gt;
+&lt;h3 id=&#34;任何字符&#34;&gt;任何字符
+&lt;/h3&gt;&lt;p&gt;点&lt;code&gt;.&lt;/code&gt;：允许匹配任何字符，包括特殊字符和空格&lt;/p&gt;
+&lt;h3 id=&#34;字符集abc&#34;&gt;字符集&lt;code&gt;[abc]&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;如果一个词中的字符可以是各种字符，我们就将所有的可选字符写进中括号 [] 中。例如，为了查找文本中的所有单词，我们需要编写表达式，在 [] 中相邻地输入字符 a、e、i、o、u。&lt;/p&gt;
+&lt;h3 id=&#34;否定字符集abc&#34;&gt;否定字符集&lt;code&gt;[^abc]&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了查找下方文本的所有单词（&lt;code&gt;ber&lt;/code&gt; 和&lt;code&gt;bor&lt;/code&gt; 除外），请在 [] 中的 ^ 后面并排输入 e 和 o。&lt;/p&gt;
+&lt;h3 id=&#34;字母范围a-z&#34;&gt;字母范围&lt;code&gt;[a-z]&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了查找指定范围的字母，我们需要将起始字母和结束字母写进 &lt;code&gt;[] &lt;/code&gt;中，中间用连字符&lt;code&gt;-&lt;/code&gt;分隔。它区分大小写。请编写表达式，匹配&lt;code&gt;e&lt;/code&gt;和&lt;code&gt;o&lt;/code&gt;之间所有的小写字母，包括它们本身。&lt;/p&gt;
+&lt;h3 id=&#34;数字范围0-9&#34;&gt;数字范围&lt;code&gt;[0-9]&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了查找指定范围的数字，我们需要在&lt;code&gt;[]&lt;/code&gt;中输入起始和结束数字，中间用连字符&lt;code&gt;-&lt;/code&gt;分隔。请编写表达式，匹配&lt;code&gt;3&lt;/code&gt;到&lt;code&gt;6&lt;/code&gt;之间的所有数字，包括它们本身。&lt;/p&gt;
+&lt;h2 id=&#34;重复&#34;&gt;重复
+&lt;/h2&gt;&lt;p&gt;一些特殊字符用来指定一个字符在文本中重复的次数。它们分别是加号&lt;code&gt;+&lt;/code&gt;、星号&lt;code&gt;*&lt;/code&gt;和问号&lt;code&gt;?&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;星号&#34;&gt;星号&lt;code&gt;*&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;在字符后面加上&lt;code&gt;*&lt;/code&gt;，表示一个字符没有或者存在多次。&lt;/p&gt;
+&lt;h3 id=&#34;加号&#34;&gt;加号&lt;code&gt;+&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;在字符后面加上&lt;code&gt;+&lt;/code&gt;，表示一个字符出现一次或者多次&lt;/p&gt;
+&lt;h3 id=&#34;问号&#34;&gt;问号&lt;code&gt;?&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;在字符后面加上&lt;code&gt;+&lt;/code&gt;，表示一个字符可选，出现一次或者一次都没有&lt;/p&gt;
+&lt;h3 id=&#34;大括号-1&#34;&gt;大括号-1
+&lt;/h3&gt;&lt;p&gt;用&lt;code&gt;{n}&lt;/code&gt;编写表达式，匹配文本中位数为n的字符。&lt;/p&gt;
+&lt;h3 id=&#34;大括号-2&#34;&gt;大括号-2
+&lt;/h3&gt;&lt;p&gt;用&lt;code&gt;{n,}&lt;/code&gt;编写表达式，匹配文本中位数至少为n的字符。&lt;/p&gt;
+&lt;h3 id=&#34;大括号-3&#34;&gt;大括号-3
+&lt;/h3&gt;&lt;p&gt;用&lt;code&gt;{n,m}&lt;/code&gt;编写表达式，匹配文本中位数为n至m的字符。&lt;/p&gt;
+&lt;h2 id=&#34;分组&#34;&gt;分组
+&lt;/h2&gt;&lt;p&gt;我们可以对一个表达式进行分组，并用这些分组来引用或执行一些规则。&lt;/p&gt;
+&lt;h3 id=&#34;括号分组&#34;&gt;括号&lt;code&gt;()&lt;/code&gt;分组
+&lt;/h3&gt;&lt;p&gt;使用括号包裹字符，实现分组&lt;/p&gt;
+&lt;h3 id=&#34;引用组&#34;&gt;引用组
+&lt;/h3&gt;&lt;p&gt;使用&lt;code&gt;\1&lt;/code&gt;来避免重复书写，这里1表示分组顺序。&lt;/p&gt;
+&lt;h3 id=&#34;非捕获分组&#34;&gt;非捕获分组
+&lt;/h3&gt;&lt;p&gt;使用括号&lt;code&gt;(?:)&lt;/code&gt;分组，确保它不会被引用捕获。&lt;/p&gt;
+&lt;h2 id=&#34;特殊字符&#34;&gt;特殊字符
+&lt;/h2&gt;&lt;h3 id=&#34;竖线&#34;&gt;竖线&lt;code&gt;|&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;竖线允许一个表达式包含多个不同的分支。所有分支用&lt;code&gt;|&lt;/code&gt;分隔。和在字符层面上运作的字符集&lt;code&gt;[abc]&lt;/code&gt;不同，分支在表达式层面上运作。&lt;/p&gt;
+&lt;h3 id=&#34;转义字符&#34;&gt;转义字符&lt;code&gt;\&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;在书写正则表达式时，我们会用到&lt;code&gt;{}[]\/+*.$^|?&lt;/code&gt;这些特殊字符。为了匹配这些特殊字符本身，我们需要使用&lt;code&gt;\&lt;/code&gt;进行转义。&lt;/p&gt;
+&lt;h3 id=&#34;插入符&#34;&gt;插入符&lt;code&gt;^&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;匹配字符串的开始。如果仅仅需要查找行首字符，就在表达式前面添加&lt;code&gt;^&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;美元符号&#34;&gt;美元符号&lt;code&gt;$&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;匹配字符串的结束。加在字符的后面。&lt;/p&gt;
+&lt;h2 id=&#34;单词字符&#34;&gt;单词字符
+&lt;/h2&gt;&lt;h3 id=&#34;w&#34;&gt;&lt;code&gt;\w&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;匹配字母、数字、下划线。&lt;/p&gt;
+&lt;h3 id=&#34;w-1&#34;&gt;&lt;code&gt;\W&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;匹配除字母、数字、下划线之外的字符。&lt;/p&gt;
+&lt;h3 id=&#34;数字符d&#34;&gt;数字符&lt;code&gt;\d&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;仅匹配数字。&lt;/p&gt;
+&lt;h3 id=&#34;非数字符d&#34;&gt;非数字符&lt;code&gt;\D&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;匹配除数字外的所有字符。&lt;/p&gt;
+&lt;h3 id=&#34;空白符s&#34;&gt;空白符&lt;code&gt;\s&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;仅匹配空白字符。&lt;/p&gt;
+&lt;h3 id=&#34;非空白符s&#34;&gt;非空白符&lt;code&gt;\S&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;匹配除空白符之外的字符。&lt;/p&gt;
+&lt;h2 id=&#34;零宽断言&#34;&gt;零宽断言
+&lt;/h2&gt;&lt;p&gt;如果我们希望正在写的词语出现在另一个词语之前或之后，我们需要使用零宽断言。&lt;/p&gt;
+&lt;h3 id=&#34;正向先行断言&#34;&gt;正向先行断言&lt;code&gt;(?=)&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了匹配后面有指定字符的值，我们可以在=后面写。放在字符后&lt;/p&gt;
+&lt;h3 id=&#34;负向先行断言&#34;&gt;负向先行断言&lt;code&gt;(?!)&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了匹配后面没有有指定字符的值，我们可以在!后面写。&lt;/p&gt;
+&lt;h3 id=&#34;正向后行断言&#34;&gt;正向后行断言&lt;code&gt;(?&amp;lt;=)&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了匹配前面有指定字符的值，我们可以在=后面写。放在字符前&lt;/p&gt;
+&lt;h3 id=&#34;负向后行断言&#34;&gt;负向后行断言&lt;code&gt;(?&amp;lt;!)&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了匹配前面没有指定字符的值，我们可以在!后面写。&lt;/p&gt;
+&lt;h2 id=&#34;标志&#34;&gt;标志
+&lt;/h2&gt;&lt;p&gt;标志改变表达式的输出。这就是标志也称为&lt;code&gt;修饰符&lt;/code&gt;的原因。标志决定表达式是否将文本视作单独的行处理，是否区分大小写，或者是否查找所有匹配项。&lt;/p&gt;
+&lt;h3 id=&#34;全局标志g&#34;&gt;全局标志&lt;code&gt;g&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;表达式以&lt;code&gt;//&lt;/code&gt;包裹，在后面加g表示匹配全局符合要求的，否则只有一个匹配项。&lt;/p&gt;
+&lt;h3 id=&#34;多行标志m&#34;&gt;多行标志&lt;code&gt;m&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;正则表达式将所有文本视作一行。但如果我们使用了多行标志，它就会单独处理每一行。&lt;/p&gt;
+&lt;h3 id=&#34;忽略大小写标志i&#34;&gt;忽略大小写标志&lt;code&gt;i&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;为了使我们编写的表达式不再大小写敏感，我们必须启用&lt;code&gt;不区分大小写&lt;/code&gt;标志。&lt;/p&gt;
+&lt;h3 id=&#34;贪婪匹配&#34;&gt;贪婪匹配
+&lt;/h3&gt;&lt;p&gt;正则表达式默认执行贪婪匹配。这意味着匹配内容会尽可能长。&lt;/p&gt;
+&lt;h3 id=&#34;懒惰匹配&#34;&gt;懒惰匹配
+&lt;/h3&gt;&lt;p&gt;与贪婪匹配不同，懒惰匹配在第一次匹配时停止。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>5月游上海</title>
         <link>https://shuliang.asia/p/5%E6%9C%88%E6%B8%B8%E4%B8%8A%E6%B5%B7/</link>
         <pubDate>Mon, 02 Jun 2025 16:18:11 +0800</pubDate>
