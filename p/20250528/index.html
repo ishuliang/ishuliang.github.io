@@ -419,7 +419,7 @@ where 条件是对笛卡尔积进行筛选的，因此会计算乘积，然后�
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post Wy面试题"
+                        alt="Featured image of post 面试题记录"
                         data-key="/20250709" 
                         data-hash="md5-mwbmDhhGRknZv3XnXHy0bQ==">
                 
@@ -427,7 +427,7 @@ where 条件是对笛卡尔积进行筛选的，因此会计算乘积，然后�
         
 
         <div class="article-details">
-            <h2 class="article-title">Wy面试题</h2>
+            <h2 class="article-title">面试题记录</h2>
         </div>
     </a>
 </article>
@@ -536,10 +536,32 @@ where 条件是对笛卡尔积进行筛选的，因此会计算乘积，然后�
         2025 记录每一天
     </section>
     
-    <section class="powerby">
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
+    
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+
+<script language="javascript"> 
+    var now = new Date();
+    function createtime(){
+        now.setTime(now.getTime()+250); 
+        var grt= new Date("2024/07/01 00:00:00"); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if(String(snum).length ==1 ){snum = "0" + snum;}
+
+        document.getElementById("timeDate").innerHTML = "本站已稳定运行"+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"
+    }
+    setInterval("createtime()",250); 
+</script> 
+
 </footer>
 
 

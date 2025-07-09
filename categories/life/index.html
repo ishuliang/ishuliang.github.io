@@ -10,10 +10,10 @@
 <meta property='og:description' content="记录点滴生活">
 <meta property='og:url' content='https://shuliang.asia/categories/life/'>
 <meta property='og:site_name' content='刘公子的建安百科书'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-07-09T14:56:48&#43;08:00 '/><meta property='og:image' content='https://shuliang.asia/categories/life/Sunglasses%20Emoji.png' />
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-07-09T14:56:48&#43;08:00 '/><meta property='og:image' content='https://shuliang.asia/categories/life/life-index.JPG' />
 <meta name="twitter:title" content="Category: 生活 - 刘公子的建安百科书">
 <meta name="twitter:description" content="记录点滴生活"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://shuliang.asia/categories/life/Sunglasses%20Emoji.png' /><link rel="alternate" type="application/rss&#43;xml" href="https://shuliang.asia/categories/life/index.xml">
+    <meta name="twitter:image" content='https://shuliang.asia/categories/life/life-index.JPG' /><link rel="alternate" type="application/rss&#43;xml" href="https://shuliang.asia/categories/life/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -254,7 +254,7 @@
                 
             </div>
                 <div class="section-image">
-                    <img src="/categories/life/Sunglasses%20Emoji_hu_ed97b267523b427e.png" 
+                    <img src="/categories/life/life-index_hu_2fee8aaefea3aef9.JPG" 
                             width="120"
                             height="120" 
                             loading="lazy">
@@ -316,10 +316,32 @@
         2025 记录每一天
     </section>
     
-    <section class="powerby">
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
+    
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+
+<script language="javascript"> 
+    var now = new Date();
+    function createtime(){
+        now.setTime(now.getTime()+250); 
+        var grt= new Date("2024/07/01 00:00:00"); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if(String(snum).length ==1 ){snum = "0" + snum;}
+
+        document.getElementById("timeDate").innerHTML = "本站已稳定运行"+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"
+    }
+    setInterval("createtime()",250); 
+</script> 
+
 </footer>
 
 

@@ -65,7 +65,19 @@ links:
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://shuliang.asia/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <description>&lt;p&gt;欢迎观看
+&lt;img src=&#34;https://shuliang.asia/%E5%85%B3%E4%BA%8E/me.JPG&#34;
+	width=&#34;1280&#34;
+	height=&#34;1707&#34;
+	srcset=&#34;https://shuliang.asia/%E5%85%B3%E4%BA%8E/me_hu_a965604ed8721c94.JPG 480w, https://shuliang.asia/%E5%85%B3%E4%BA%8E/me_hu_3c8385af7c4cb771.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;74&#34;
+		data-flex-basis=&#34;179px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
