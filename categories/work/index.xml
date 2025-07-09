@@ -7,7 +7,173 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>记录每一天</copyright>
-        <lastBuildDate>Mon, 23 Jun 2025 16:39:04 +0800</lastBuildDate><atom:link href="https://shuliang.asia/categories/work/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 09 Jul 2025 14:56:48 +0800</lastBuildDate><atom:link href="https://shuliang.asia/categories/work/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Wy面试题</title>
+        <link>https://shuliang.asia/p/20250709/</link>
+        <pubDate>Wed, 09 Jul 2025 14:56:48 +0800</pubDate>
+        
+        <guid>https://shuliang.asia/p/20250709/</guid>
+        <description>&lt;img src="https://shuliang.asia/p/20250709/f9ffa0e132b8dd7bf0c3c407f27275d.jpg" alt="Featured image of post Wy面试题" /&gt;&lt;h1 id=&#34;面试题&#34;&gt;面试题
+&lt;/h1&gt;&lt;h2 id=&#34;redis是什么&#34;&gt;redis是什么
+&lt;/h2&gt;&lt;p&gt;Redis 是完全开源免费的， 遵守&lt;code&gt;BSD&lt;/code&gt;协议， 是一个高性能的&lt;code&gt;key-value&lt;/code&gt;数据库。&lt;/p&gt;
+&lt;p&gt;Redis 与其他&lt;code&gt;key - value&lt;/code&gt;缓存产品有以下三个特点：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Redis 支持数据的持久化，可以将内存中的数据保存在磁盘中，重启的时候可以再次加载进行使用。&lt;/p&gt;
+&lt;p&gt;Redis 不仅仅支持简单的&lt;code&gt;key-value&lt;/code&gt;类型的数据， 同时还提供&lt;code&gt;list&lt;/code&gt;，&lt;code&gt;set&lt;/code&gt;，&lt;code&gt;zset&lt;/code&gt;，&lt;code&gt;hash&lt;/code&gt;等数据结构的存
+储。&lt;/p&gt;
+&lt;p&gt;Redis 支持数据的备份， 即&lt;code&gt;master-slave&lt;/code&gt;模式的数据备份。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Redis 优势:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;性能极高: Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s 。&lt;/p&gt;
+&lt;p&gt;丰富的数据类型 : Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及Ordered Sets 数据类型操
+作。&lt;/p&gt;
+&lt;p&gt;原子: Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个操作是原子
+性的。多个操作也支持事务，即原子性，通过 MULTI 和 EXEC 指令包起来。&lt;/p&gt;
+&lt;p&gt;丰富的特性: Redis 还支持 publish/subscribe, 通知, key 过期等等特性。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Redis 与其他 key-value 存储的不同：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Redis 有着更为复杂的数据结构并且提供对他们的原子性操作，这是一个不同于其他数据库的进化路
+径。Redis 的数据类型都是基于基本数据结构的同时对程序员透明， 无需进行额外的抽象。&lt;/p&gt;
+&lt;p&gt;Redis 运行在内存中但是可以持久化到磁盘，所以在对不同数据集进行高速读写时需要权衡内存， 因为
+数据量不能大于硬件内存。在内存数据库方面的另一个优点是，相比在磁盘上相同的复杂的数据结构，
+在内存中操作起来非常简单，这样 Redis 可以做很多内部复杂性很强的事情。同时，在磁盘格式方面他
+们是紧凑的以追加的方式产生的， 因为他们并不需要进行随机访问。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;redis数据双写&#34;&gt;redis数据双写
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://shuliang.asia/p/20250709/image-20250709103958047.png&#34;
+	width=&#34;1057&#34;
+	height=&#34;3212&#34;
+	srcset=&#34;https://shuliang.asia/p/20250709/image-20250709103958047_hu_37f812a6cf5ee893.png 480w, https://shuliang.asia/p/20250709/image-20250709103958047_hu_74955d0ac57f6b3c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20250709103958047&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;32&#34;
+		data-flex-basis=&#34;78px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;redis-的数据类型&#34;&gt;Redis 的数据类型
+&lt;/h2&gt;&lt;p&gt;Redis 支持五种数据类型： string（ 字符串），hash（ 哈希）， list（ 列表）， set（ 集合） 及
+sorted set（有序集合）。&lt;/p&gt;
+&lt;h2 id=&#34;redis-的持久化机制&#34;&gt;Redis 的持久化机制
+&lt;/h2&gt;&lt;p&gt;Redis 提供两种持久化机制 RDB 和 AOF 机制:
+RDB（Redis DataBase）持久化方式： 是指用数据集快照的方式（半持久化模式）记录 redis 数据库的所
+有键值对,在某个时间点将数据写入一个临时文件， 持久化结束后， 用这个临时文件替换上次持久化的
+文件， 达到数据恢复。
+优点：
+1、只有一个文件 dump.rdb， 方便持久化。&lt;/p&gt;
+&lt;p&gt;2、容灾性好， 一个文件可以保存到安全的磁盘。&lt;/p&gt;
+&lt;p&gt;3、性能最大化， fork 子进程来完成写操作， 让主进程继续处理命令， 所以是 IO 最大化。使用单独子
+进程来进行持久化，主进程不会进行任何 IO 操作，保证了 redis 的高性能&lt;/p&gt;
+&lt;p&gt;4、相对于数据集大时， 比AOF 的启动效率更高。
+缺点:
+1、数据安全性低。RDB 是间隔一段时间进行持久化，如果持久化之间 redis 发生故障， 会发生数据丢
+失。所以这种方式更适合数据要求不严谨的时候&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuliang.asia/p/20250709/image-20250709102528490.png&#34;
+	width=&#34;943&#34;
+	height=&#34;552&#34;
+	srcset=&#34;https://shuliang.asia/p/20250709/image-20250709102528490_hu_8a7151daca4454cd.png 480w, https://shuliang.asia/p/20250709/image-20250709102528490_hu_b1e13f58f0af79b2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20250709102528490&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;410px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;AOF（Append-only file）持久化方式： 是指所有的命令行记录以 redis 命令请求协议的格式（完全持久化存储）保存为 aof 文件。
+优点：
+1、数据安全， aof 持久化可以配置 appendfsync 属性， 有 always， 每进行一次命令操作就记录到aof 文件中一次。
+2、通过 append 模式写文件， 即使中途服务器宕机， 可以通过 redis-check-aof 工具解决数据一致性问题。
+3、AOF 机制的 rewrite 模式。AOF 文件没被 rewrite 之前（ 文件过大时会对命令进行合并重写）， 可以删除其中的某些命令（ 比如误操作的 flushall）)
+缺点：
+1、AOF 文件比 RDB 文件大， 且恢复速度慢。
+2、数据集大的时候， 比 rdb 启动效率低。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuliang.asia/p/20250709/image-20250709102642996.png&#34;
+	width=&#34;806&#34;
+	height=&#34;586&#34;
+	srcset=&#34;https://shuliang.asia/p/20250709/image-20250709102642996_hu_fdb668c9c204581b.png 480w, https://shuliang.asia/p/20250709/image-20250709102642996_hu_7db8da650fc131d0.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20250709102642996&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;137&#34;
+		data-flex-basis=&#34;330px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;redis过期处理&#34;&gt;redis过期处理
+&lt;/h2&gt;&lt;p&gt;1、定时删除:在设置键的过期时间的同时，创建一个定时器 timer). 让定时器在键的过期时间来临时，立即执行对键的删除操作。
+2、惰性删除:放任键过期不管，但是每次从键空间中获取键时，都检查取得的键是 否过期， 如果过期的话， 就删除该键;如果没有过期， 就返回该键。
+3、定期删除:每隔一段时间程序就对数据库进行一次检查，删除里面的过期键。至 于要删除多少过期键， 以及要检查多少个数据库， 则由算法决定。&lt;/p&gt;
+&lt;h2 id=&#34;redis事务处理&#34;&gt;redis事务处理
+&lt;/h2&gt;&lt;p&gt;通过 MULTI、EXEC、WATCH 等命令来实现事务功能。支持将多个命令请求打包，按顺序一次性执行，执行期间不会中断处理其他客户端请求，具有原子性（Atomicity)、一致性(Consistency)和隔离性（Isolation），且在特定持久模式下具备持久性（Durability）&lt;/p&gt;
+&lt;h2 id=&#34;redis为什么这么快&#34;&gt;Redis为什么这么快
+&lt;/h2&gt;&lt;p&gt;1、完全基于内存，绝大部分请求是纯粹的内存操作，非常快速。数据存在内存中，类似于HashMap，HashMap 的优势就是查找和操作的时间复杂度都是O(1)；&lt;/p&gt;
+&lt;p&gt;2、数据结构简单，对数据操作也简单，Redis 中的数据结构是专门进行设计的；&lt;/p&gt;
+&lt;p&gt;3、采用单线程，避免了不必要的上下文切换和竞争条件，也不存在多进程或者多线程导致的切换而消耗 CPU，不用去考虑各种锁的问题，不存在加锁释放锁操作，没有因为可能出现死锁而导致的性能消耗；&lt;/p&gt;
+&lt;p&gt;4、使用多路 I/O 复用模型，非阻塞 IO；&lt;/p&gt;
+&lt;p&gt;5、使用底层模型不同，它们之间底层实现方式以及与客户端之间通信的应用协议不一样，Redis直接自己构建了 VM 机制 ，因为一般的系统调用系统函数的话，会浪费一定的时间去移动和请求；&lt;/p&gt;
+&lt;p&gt;elasticsearch深度分页,怎么解决&lt;/p&gt;
+&lt;p&gt;es适合搜索+日志，使用范围很小&lt;/p&gt;
+&lt;p&gt;购物车用Redis,redis适合热点数据：频繁访问但不频繁修改 的数据&lt;/p&gt;
+&lt;p&gt;redis的数据类型时key-value  类型的&lt;/p&gt;
+&lt;p&gt;如果存购物车数据，需要用其中的哈希类型和zset类型&lt;/p&gt;
+&lt;p&gt;redis的数据类型中字符串适合存验证码&lt;/p&gt;
+&lt;p&gt;cacahe.set(key,value)适用于字符串&lt;/p&gt;
+&lt;p&gt;订单存mysql&lt;/p&gt;
+&lt;p&gt;在Vue中用try&amp;hellip; catch&amp;hellip;时，只要HTTP状态码不是200就会进入catch，此时获取catch报错的状态码可以用error.response.status&lt;/p&gt;
+&lt;p&gt;bytes字节&lt;/p&gt;
+&lt;p&gt;encode 编码 将字符串转为字节，decode 解码 及那个字节转为字符串&lt;/p&gt;
+&lt;p&gt;json.loads 序列化 把json字符串转为字典&lt;/p&gt;
+&lt;p&gt;json.dumps 反序列化&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>List迭代器中的modCount</title>
+        <link>https://shuliang.asia/p/20250708/</link>
+        <pubDate>Tue, 08 Jul 2025 17:10:00 +0000</pubDate>
+        
+        <guid>https://shuliang.asia/p/20250708/</guid>
+        <description>&lt;h1 id=&#34;迭代器&#34;&gt;迭代器
+&lt;/h1&gt;&lt;h2 id=&#34;使用迭代器遍历删除&#34;&gt;使用迭代器遍历删除
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Integer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arrayList&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ArrayList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;75&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arrayList&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Iterator&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Integer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;it&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arrayList&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;iterator&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;it&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;hasNext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Integer&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;it&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;it&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;remove&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>正则表达式学习</title>
         <link>https://shuliang.asia/p/20250623/</link>
         <pubDate>Mon, 23 Jun 2025 16:39:04 +0800</pubDate>

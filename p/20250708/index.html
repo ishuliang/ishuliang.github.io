@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一道算法题目">
-<title>异或运算——找单独的数</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="学习list迭代器">
+<title>List迭代器中的modCount</title>
 
-<link rel='canonical' href='https://shuliang.asia/p/20241113/'>
+<link rel='canonical' href='https://shuliang.asia/p/20250708/'>
 
-<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="异或运算——找单独的数">
-<meta property='og:description' content="一道算法题目">
-<meta property='og:url' content='https://shuliang.asia/p/20241113/'>
+<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="List迭代器中的modCount">
+<meta property='og:description' content="学习list迭代器">
+<meta property='og:url' content='https://shuliang.asia/p/20250708/'>
 <meta property='og:site_name' content='刘公子的建安百科书'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-13T15:04:30&#43;00:00'/><meta property='article:modified_time' content='2024-11-13T15:04:30&#43;00:00'/><meta property='og:image' content='https://shuliang.asia/p/20241113/20241113.jpg' />
-<meta name="twitter:title" content="异或运算——找单独的数">
-<meta name="twitter:description" content="一道算法题目"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://shuliang.asia/p/20241113/20241113.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-07-08T17:10:00&#43;00:00'/><meta property='article:modified_time' content='2025-07-08T17:10:00&#43;00:00'/>
+<meta name="twitter:title" content="List迭代器中的modCount">
+<meta name="twitter:description" content="学习list迭代器">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -166,10 +165,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#异或与或都是按位运算">异或、与、或都是按位运算。</a></li>
-    <li><a href="#异或运算规律">异或运算规律</a></li>
-    <li><a href="#异或应用方面">异或应用方面</a></li>
-    <li><a href="#想到异或的原因">想到异或的原因</a></li>
+    <li><a href="#使用迭代器遍历删除">使用迭代器遍历删除</a></li>
   </ol>
 </nav>
         </div>
@@ -181,20 +177,8 @@
 
 
             <main class="main full-width">
-    <article class="has-image main-article">
+    <article class="main-article">
     <header class="article-header">
-        <div class="article-image">
-            <a href="/p/20241113/">
-                <img src="/p/20241113/20241113_hu_7d4063faad732337.jpg"
-                        srcset="/p/20241113/20241113_hu_7d4063faad732337.jpg 800w, /p/20241113/20241113_hu_e56c10f52b3d85dc.jpg 1600w"
-                        width="800" 
-                        height="600" 
-                        loading="lazy"
-                        alt="Featured image of post 异或运算——找单独的数" />
-                
-            </a>
-        </div>
-    
 
     <div class="article-details">
     
@@ -209,12 +193,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/20241113/">异或运算——找单独的数</a>
+            <a href="/p/20250708/">List迭代器中的modCount</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            一道算法题目
+            学习list迭代器
         </h3>
         
     </div>
@@ -235,7 +219,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Nov 13, 2024</time>
+                <time class="article-time--published">Jul 08, 2025</time>
             </div>
         
 
@@ -265,44 +249,9 @@
     <section class="article-content">
     
     
-    <h2 id="异或与或都是按位运算">异或、与、或都是按位运算。
-</h2><p>或运算有两种情况会导致结果为<code>true</code>，分别是：1. 都为true；2. 一个为true，一个为false。为了区分这种情况引入了异或<code>^</code>，这样或的第一种全相同则为false，而不同则为true，也就是说异或主要用于判断两个值是否为<strong>不同</strong></p>
-<h2 id="异或运算规律">异或运算规律
-</h2><p>由于相同为0，不同为1.</p>
-<p>所以：</p>
-<ol>
-<li>一个值与自己的异或总为false</li>
-<li>一个值与0的异或总为这个数</li>
-<li>可交换性、可结合性</li>
-</ol>
-<h2 id="异或应用方面">异或应用方面
-</h2><ol>
-<li>简化计算</li>
-</ol>
-<p>我们可以先找相同的异或得到0在计算其他的。</p>
-<ol start="2">
-<li>交换值</li>
-</ol>
-<p>两个变量连续三次异或就可以互换值。</p>
-<blockquote>
-<p>x, y</p>
-<p>第一次：x1 = x ^ y</p>
-<p>第二次：y1 = x1 ^ y = x ^ y ^ y = x</p>
-<p>第三次：x2 = x1 ^ y1 = x ^ y ^ x = y</p>
-<p>现在x2 = y; y1 = x。</p></blockquote>
-<ol start="3">
-<li>加密、数据备份</li>
-</ol>
-<p>参考ruanyf的博客吧（https://www.ruanyifeng.com/blog/2021/01/_xor.html）</p>
-<h2 id="想到异或的原因">想到异或的原因
-</h2><p>在<a class="link" href="https://www.marscode.cn/practice/9e08kko47ern5p?problem_id=7414004855077912620"  target="_blank" rel="noopener"
-    >豆包上看到一个题目</a>，然后就看了一些别人的写法，觉得不错，记录一下。</p>
-<p>原题是这样的：</p>
-<p><strong>在一个班级中，每位同学都拿到了一张卡片，上面有一个整数。有趣的是，除了一个数字之外，所有的数字都恰好出现了两次。现在需要你帮助班长小C快速找到那个拿了独特数字卡片的同学手上的数字是什么。</strong></p>
-<p>输入：cards = [1, 1, 2, 2, 3, 3, 4, 5, 5],输出4，因为4是唯一一个没有配对的</p>
-<p>输入：cards = [0, 1, 0, 1, 2]，输出2，因为2是唯一一个没有配对的</p>
-<p>约束条件： 数字大小为奇数，重复数字只会出现两次。</p>
-<div class="highlight"><div class="chroma">
+    <h1 id="迭代器">迭代器
+</h1><h2 id="使用迭代器遍历删除">使用迭代器遍历删除
+</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -316,34 +265,23 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">solution</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">cards</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Edit your code here</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">card</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">cards</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">result</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="n">card</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arrayList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">100</span><span class="o">/</span><span class="n">0</span><span class="p">.</span><span class="na">75</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">100</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">arrayList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayList</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Integer</span><span class="w"> </span><span class="n">next</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="na">next</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">next</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">it</span><span class="p">.</span><span class="na">remove</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Add your test cases here</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">solution</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="p">{</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">,</span><span class="w"> </span><span class="n">4</span><span class="p">,</span><span class="w"> </span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">5</span><span class="p">})</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">4</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">solution</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="p">{</span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">})</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">2</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>这里用的就是异或的运算，所有的异或之后，因为重复的数字只会出现两次，所以重复数字计算会为0，单独一个就剩下来了，就输出来了。</p>
-
+</div>
 </section>
 
 
@@ -384,19 +322,6 @@
 
         <div class="article-details">
             <h2 class="article-title">Wy面试题</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/20250708/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">List迭代器中的modCount</h2>
         </div>
     </a>
 </article>
@@ -469,6 +394,30 @@
 
         <div class="article-details">
             <h2 class="article-title">自定义验证入参方法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/20250519/">
+        
+        
+            <div class="article-image">
+                <img src="/p/20250519/20250519.08883a9e99966fd778d060514f143967_hu_a97c3308a6b2cc7.JPG" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Mysql自动递增"
+                        data-key="20250519" 
+                        data-hash="md5-CIg6npmWb9d40GBRTxQ5Zw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Mysql自动递增</h2>
         </div>
     </a>
 </article>

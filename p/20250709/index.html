@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一道算法题目">
-<title>异或运算——找单独的数</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="wy记录的题目">
+<title>Wy面试题</title>
 
-<link rel='canonical' href='https://shuliang.asia/p/20241113/'>
+<link rel='canonical' href='https://shuliang.asia/p/20250709/'>
 
-<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="异或运算——找单独的数">
-<meta property='og:description' content="一道算法题目">
-<meta property='og:url' content='https://shuliang.asia/p/20241113/'>
+<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="Wy面试题">
+<meta property='og:description' content="wy记录的题目">
+<meta property='og:url' content='https://shuliang.asia/p/20250709/'>
 <meta property='og:site_name' content='刘公子的建安百科书'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-13T15:04:30&#43;00:00'/><meta property='article:modified_time' content='2024-11-13T15:04:30&#43;00:00'/><meta property='og:image' content='https://shuliang.asia/p/20241113/20241113.jpg' />
-<meta name="twitter:title" content="异或运算——找单独的数">
-<meta name="twitter:description" content="一道算法题目"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://shuliang.asia/p/20241113/20241113.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-07-09T14:56:48&#43;08:00'/><meta property='article:modified_time' content='2025-07-09T14:56:48&#43;08:00'/><meta property='og:image' content='https://shuliang.asia/p/20250709/f9ffa0e132b8dd7bf0c3c407f27275d.jpg' />
+<meta name="twitter:title" content="Wy面试题">
+<meta name="twitter:description" content="wy记录的题目"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://shuliang.asia/p/20250709/f9ffa0e132b8dd7bf0c3c407f27275d.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -166,10 +166,13 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#异或与或都是按位运算">异或、与、或都是按位运算。</a></li>
-    <li><a href="#异或运算规律">异或运算规律</a></li>
-    <li><a href="#异或应用方面">异或应用方面</a></li>
-    <li><a href="#想到异或的原因">想到异或的原因</a></li>
+    <li><a href="#redis是什么">redis是什么</a></li>
+    <li><a href="#redis数据双写">redis数据双写</a></li>
+    <li><a href="#redis-的数据类型">Redis 的数据类型</a></li>
+    <li><a href="#redis-的持久化机制">Redis 的持久化机制</a></li>
+    <li><a href="#redis过期处理">redis过期处理</a></li>
+    <li><a href="#redis事务处理">redis事务处理</a></li>
+    <li><a href="#redis为什么这么快">Redis为什么这么快</a></li>
   </ol>
 </nav>
         </div>
@@ -184,13 +187,13 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/20241113/">
-                <img src="/p/20241113/20241113_hu_7d4063faad732337.jpg"
-                        srcset="/p/20241113/20241113_hu_7d4063faad732337.jpg 800w, /p/20241113/20241113_hu_e56c10f52b3d85dc.jpg 1600w"
+            <a href="/p/20250709/">
+                <img src="/p/20250709/f9ffa0e132b8dd7bf0c3c407f27275d_hu_3f29ccb04143c91a.jpg"
+                        srcset="/p/20250709/f9ffa0e132b8dd7bf0c3c407f27275d_hu_3f29ccb04143c91a.jpg 800w, /p/20250709/f9ffa0e132b8dd7bf0c3c407f27275d_hu_a451b694173482a4.jpg 1600w"
                         width="800" 
-                        height="600" 
+                        height="1067" 
                         loading="lazy"
-                        alt="Featured image of post 异或运算——找单独的数" />
+                        alt="Featured image of post Wy面试题" />
                 
             </a>
         </div>
@@ -209,12 +212,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/20241113/">异或运算——找单独的数</a>
+            <a href="/p/20250709/">Wy面试题</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            一道算法题目
+            wy记录的题目
         </h3>
         
     </div>
@@ -235,7 +238,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Nov 13, 2024</time>
+                <time class="article-time--published">Jul 09, 2025</time>
             </div>
         
 
@@ -250,7 +253,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -265,84 +268,124 @@
     <section class="article-content">
     
     
-    <h2 id="异或与或都是按位运算">异或、与、或都是按位运算。
-</h2><p>或运算有两种情况会导致结果为<code>true</code>，分别是：1. 都为true；2. 一个为true，一个为false。为了区分这种情况引入了异或<code>^</code>，这样或的第一种全相同则为false，而不同则为true，也就是说异或主要用于判断两个值是否为<strong>不同</strong></p>
-<h2 id="异或运算规律">异或运算规律
-</h2><p>由于相同为0，不同为1.</p>
-<p>所以：</p>
-<ol>
-<li>一个值与自己的异或总为false</li>
-<li>一个值与0的异或总为这个数</li>
-<li>可交换性、可结合性</li>
-</ol>
-<h2 id="异或应用方面">异或应用方面
-</h2><ol>
-<li>简化计算</li>
-</ol>
-<p>我们可以先找相同的异或得到0在计算其他的。</p>
-<ol start="2">
-<li>交换值</li>
-</ol>
-<p>两个变量连续三次异或就可以互换值。</p>
+    <h1 id="面试题">面试题
+</h1><h2 id="redis是什么">redis是什么
+</h2><p>Redis 是完全开源免费的， 遵守<code>BSD</code>协议， 是一个高性能的<code>key-value</code>数据库。</p>
+<p>Redis 与其他<code>key - value</code>缓存产品有以下三个特点：</p>
 <blockquote>
-<p>x, y</p>
-<p>第一次：x1 = x ^ y</p>
-<p>第二次：y1 = x1 ^ y = x ^ y ^ y = x</p>
-<p>第三次：x2 = x1 ^ y1 = x ^ y ^ x = y</p>
-<p>现在x2 = y; y1 = x。</p></blockquote>
-<ol start="3">
-<li>加密、数据备份</li>
-</ol>
-<p>参考ruanyf的博客吧（https://www.ruanyifeng.com/blog/2021/01/_xor.html）</p>
-<h2 id="想到异或的原因">想到异或的原因
-</h2><p>在<a class="link" href="https://www.marscode.cn/practice/9e08kko47ern5p?problem_id=7414004855077912620"  target="_blank" rel="noopener"
-    >豆包上看到一个题目</a>，然后就看了一些别人的写法，觉得不错，记录一下。</p>
-<p>原题是这样的：</p>
-<p><strong>在一个班级中，每位同学都拿到了一张卡片，上面有一个整数。有趣的是，除了一个数字之外，所有的数字都恰好出现了两次。现在需要你帮助班长小C快速找到那个拿了独特数字卡片的同学手上的数字是什么。</strong></p>
-<p>输入：cards = [1, 1, 2, 2, 3, 3, 4, 5, 5],输出4，因为4是唯一一个没有配对的</p>
-<p>输入：cards = [0, 1, 0, 1, 2]，输出2，因为2是唯一一个没有配对的</p>
-<p>约束条件： 数字大小为奇数，重复数字只会出现两次。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">solution</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">cards</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Edit your code here</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">card</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">cards</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">result</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="n">card</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Add your test cases here</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">solution</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="p">{</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">,</span><span class="w"> </span><span class="n">4</span><span class="p">,</span><span class="w"> </span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">5</span><span class="p">})</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">4</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">solution</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="p">{</span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">})</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">2</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>这里用的就是异或的运算，所有的异或之后，因为重复的数字只会出现两次，所以重复数字计算会为0，单独一个就剩下来了，就输出来了。</p>
+<p>Redis 支持数据的持久化，可以将内存中的数据保存在磁盘中，重启的时候可以再次加载进行使用。</p>
+<p>Redis 不仅仅支持简单的<code>key-value</code>类型的数据， 同时还提供<code>list</code>，<code>set</code>，<code>zset</code>，<code>hash</code>等数据结构的存
+储。</p>
+<p>Redis 支持数据的备份， 即<code>master-slave</code>模式的数据备份。</p></blockquote>
+<p>Redis 优势:</p>
+<blockquote>
+<p>性能极高: Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s 。</p>
+<p>丰富的数据类型 : Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及Ordered Sets 数据类型操
+作。</p>
+<p>原子: Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个操作是原子
+性的。多个操作也支持事务，即原子性，通过 MULTI 和 EXEC 指令包起来。</p>
+<p>丰富的特性: Redis 还支持 publish/subscribe, 通知, key 过期等等特性。</p></blockquote>
+<p>Redis 与其他 key-value 存储的不同：</p>
+<blockquote>
+<p>Redis 有着更为复杂的数据结构并且提供对他们的原子性操作，这是一个不同于其他数据库的进化路
+径。Redis 的数据类型都是基于基本数据结构的同时对程序员透明， 无需进行额外的抽象。</p>
+<p>Redis 运行在内存中但是可以持久化到磁盘，所以在对不同数据集进行高速读写时需要权衡内存， 因为
+数据量不能大于硬件内存。在内存数据库方面的另一个优点是，相比在磁盘上相同的复杂的数据结构，
+在内存中操作起来非常简单，这样 Redis 可以做很多内部复杂性很强的事情。同时，在磁盘格式方面他
+们是紧凑的以追加的方式产生的， 因为他们并不需要进行随机访问。</p></blockquote>
+<h2 id="redis数据双写">redis数据双写
+</h2><p><img src="/p/20250709/image-20250709103958047.png"
+	width="1057"
+	height="3212"
+	srcset="/p/20250709/image-20250709103958047_hu_37f812a6cf5ee893.png 480w, /p/20250709/image-20250709103958047_hu_74955d0ac57f6b3c.png 1024w"
+	loading="lazy"
+	
+		alt="image-20250709103958047"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="32"
+		data-flex-basis="78px"
+	
+></p>
+<h2 id="redis-的数据类型">Redis 的数据类型
+</h2><p>Redis 支持五种数据类型： string（ 字符串），hash（ 哈希）， list（ 列表）， set（ 集合） 及
+sorted set（有序集合）。</p>
+<h2 id="redis-的持久化机制">Redis 的持久化机制
+</h2><p>Redis 提供两种持久化机制 RDB 和 AOF 机制:
+RDB（Redis DataBase）持久化方式： 是指用数据集快照的方式（半持久化模式）记录 redis 数据库的所
+有键值对,在某个时间点将数据写入一个临时文件， 持久化结束后， 用这个临时文件替换上次持久化的
+文件， 达到数据恢复。
+优点：
+1、只有一个文件 dump.rdb， 方便持久化。</p>
+<p>2、容灾性好， 一个文件可以保存到安全的磁盘。</p>
+<p>3、性能最大化， fork 子进程来完成写操作， 让主进程继续处理命令， 所以是 IO 最大化。使用单独子
+进程来进行持久化，主进程不会进行任何 IO 操作，保证了 redis 的高性能</p>
+<p>4、相对于数据集大时， 比AOF 的启动效率更高。
+缺点:
+1、数据安全性低。RDB 是间隔一段时间进行持久化，如果持久化之间 redis 发生故障， 会发生数据丢
+失。所以这种方式更适合数据要求不严谨的时候</p>
+<p><img src="/p/20250709/image-20250709102528490.png"
+	width="943"
+	height="552"
+	srcset="/p/20250709/image-20250709102528490_hu_8a7151daca4454cd.png 480w, /p/20250709/image-20250709102528490_hu_b1e13f58f0af79b2.png 1024w"
+	loading="lazy"
+	
+		alt="image-20250709102528490"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="170"
+		data-flex-basis="410px"
+	
+></p>
+<p>AOF（Append-only file）持久化方式： 是指所有的命令行记录以 redis 命令请求协议的格式（完全持久化存储）保存为 aof 文件。
+优点：
+1、数据安全， aof 持久化可以配置 appendfsync 属性， 有 always， 每进行一次命令操作就记录到aof 文件中一次。
+2、通过 append 模式写文件， 即使中途服务器宕机， 可以通过 redis-check-aof 工具解决数据一致性问题。
+3、AOF 机制的 rewrite 模式。AOF 文件没被 rewrite 之前（ 文件过大时会对命令进行合并重写）， 可以删除其中的某些命令（ 比如误操作的 flushall）)
+缺点：
+1、AOF 文件比 RDB 文件大， 且恢复速度慢。
+2、数据集大的时候， 比 rdb 启动效率低。</p>
+<p><img src="/p/20250709/image-20250709102642996.png"
+	width="806"
+	height="586"
+	srcset="/p/20250709/image-20250709102642996_hu_fdb668c9c204581b.png 480w, /p/20250709/image-20250709102642996_hu_7db8da650fc131d0.png 1024w"
+	loading="lazy"
+	
+		alt="image-20250709102642996"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="137"
+		data-flex-basis="330px"
+	
+></p>
+<h2 id="redis过期处理">redis过期处理
+</h2><p>1、定时删除:在设置键的过期时间的同时，创建一个定时器 timer). 让定时器在键的过期时间来临时，立即执行对键的删除操作。
+2、惰性删除:放任键过期不管，但是每次从键空间中获取键时，都检查取得的键是 否过期， 如果过期的话， 就删除该键;如果没有过期， 就返回该键。
+3、定期删除:每隔一段时间程序就对数据库进行一次检查，删除里面的过期键。至 于要删除多少过期键， 以及要检查多少个数据库， 则由算法决定。</p>
+<h2 id="redis事务处理">redis事务处理
+</h2><p>通过 MULTI、EXEC、WATCH 等命令来实现事务功能。支持将多个命令请求打包，按顺序一次性执行，执行期间不会中断处理其他客户端请求，具有原子性（Atomicity)、一致性(Consistency)和隔离性（Isolation），且在特定持久模式下具备持久性（Durability）</p>
+<h2 id="redis为什么这么快">Redis为什么这么快
+</h2><p>1、完全基于内存，绝大部分请求是纯粹的内存操作，非常快速。数据存在内存中，类似于HashMap，HashMap 的优势就是查找和操作的时间复杂度都是O(1)；</p>
+<p>2、数据结构简单，对数据操作也简单，Redis 中的数据结构是专门进行设计的；</p>
+<p>3、采用单线程，避免了不必要的上下文切换和竞争条件，也不存在多进程或者多线程导致的切换而消耗 CPU，不用去考虑各种锁的问题，不存在加锁释放锁操作，没有因为可能出现死锁而导致的性能消耗；</p>
+<p>4、使用多路 I/O 复用模型，非阻塞 IO；</p>
+<p>5、使用底层模型不同，它们之间底层实现方式以及与客户端之间通信的应用协议不一样，Redis直接自己构建了 VM 机制 ，因为一般的系统调用系统函数的话，会浪费一定的时间去移动和请求；</p>
+<p>elasticsearch深度分页,怎么解决</p>
+<p>es适合搜索+日志，使用范围很小</p>
+<p>购物车用Redis,redis适合热点数据：频繁访问但不频繁修改 的数据</p>
+<p>redis的数据类型时key-value  类型的</p>
+<p>如果存购物车数据，需要用其中的哈希类型和zset类型</p>
+<p>redis的数据类型中字符串适合存验证码</p>
+<p>cacahe.set(key,value)适用于字符串</p>
+<p>订单存mysql</p>
+<p>在Vue中用try&hellip; catch&hellip;时，只要HTTP状态码不是200就会进入catch，此时获取catch报错的状态码可以用error.response.status</p>
+<p>bytes字节</p>
+<p>encode 编码 将字符串转为字节，decode 解码 及那个字节转为字符串</p>
+<p>json.loads 序列化 把json字符串转为字典</p>
+<p>json.dumps 反序列化</p>
 
 </section>
 
@@ -364,30 +407,6 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/20250709/">
-        
-        
-            <div class="article-image">
-                <img src="/p/20250709/f9ffa0e132b8dd7bf0c3c407f27275d.9b06e60e18464649d9bf75e75c7cb46d_hu_17fe49ae5ce2d542.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Wy面试题"
-                        data-key="/20250709" 
-                        data-hash="md5-mwbmDhhGRknZv3XnXHy0bQ==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Wy面试题</h2>
-        </div>
-    </a>
-</article>
-
             
                 
 <article class="">
@@ -469,6 +488,30 @@
 
         <div class="article-details">
             <h2 class="article-title">自定义验证入参方法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/20250519/">
+        
+        
+            <div class="article-image">
+                <img src="/p/20250519/20250519.08883a9e99966fd778d060514f143967_hu_a97c3308a6b2cc7.JPG" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Mysql自动递增"
+                        data-key="20250519" 
+                        data-hash="md5-CIg6npmWb9d40GBRTxQ5Zw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Mysql自动递增</h2>
         </div>
     </a>
 </article>
