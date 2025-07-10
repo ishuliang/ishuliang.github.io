@@ -4,7 +4,7 @@ description: 简单学了一下正则表达式，记一下字符用法。
 date: 2025-06-23T16:39:04+08:00
 image: 20250623.jpg
 slug: /20250623
-categories: "work"
+categories: "knowledge"
 ---
 
 # 正则表达式
