@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="学习list迭代器">
-<title>List迭代器中的modCount</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="常用运算符记录一下">
+<title>运算符</title>
 
-<link rel='canonical' href='https://shuliang.asia/p/20250708/'>
+<link rel='canonical' href='https://shuliang.asia/p/20250710/'>
 
-<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="List迭代器中的modCount">
-<meta property='og:description' content="学习list迭代器">
-<meta property='og:url' content='https://shuliang.asia/p/20250708/'>
+<link rel="stylesheet" href="/scss/style.min.60c3378e9dd005c06e8a4ceeab7bd67426cba9b48c3ccf0bb048da7d895f1cd4.css"><meta property='og:title' content="运算符">
+<meta property='og:description' content="常用运算符记录一下">
+<meta property='og:url' content='https://shuliang.asia/p/20250710/'>
 <meta property='og:site_name' content='刘公子的建安百科书'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-07-08T17:10:00&#43;00:00'/><meta property='article:modified_time' content='2025-07-08T17:10:00&#43;00:00'/>
-<meta name="twitter:title" content="List迭代器中的modCount">
-<meta name="twitter:description" content="学习list迭代器">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-07-10T15:56:48&#43;08:00'/><meta property='article:modified_time' content='2025-07-10T15:56:48&#43;08:00'/><meta property='og:image' content='https://shuliang.asia/p/20250710/0074dbe09767e97ac5e06f43b0d1586.jpg' />
+<meta name="twitter:title" content="运算符">
+<meta name="twitter:description" content="常用运算符记录一下"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://shuliang.asia/p/20250710/0074dbe09767e97ac5e06f43b0d1586.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -165,7 +166,19 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#使用迭代器遍历删除">使用迭代器遍历删除</a></li>
+    <li><a href="#一单目运算符unary-operators">一、单目运算符（Unary Operators）</a></li>
+    <li><a href="#二双目运算符binary-operators">二、双目运算符（Binary Operators）</a>
+      <ol>
+        <li><a href="#1-算术运算符">1. 算术运算符</a></li>
+        <li><a href="#2-赋值运算符">2. 赋值运算符</a></li>
+        <li><a href="#3-比较运算符">3. 比较运算符</a></li>
+        <li><a href="#4-位运算符">4. 位运算符</a></li>
+        <li><a href="#5-逻辑运算符">5. 逻辑运算符</a></li>
+      </ol>
+    </li>
+    <li><a href="#三多目运算符ternary-operators">三、多目运算符（Ternary Operators）</a></li>
+    <li><a href="#附录其他运算符结构组合表达式">附录：其他运算符/结构（组合表达式）</a></li>
+    <li><a href="#总结">总结</a></li>
   </ol>
 </nav>
         </div>
@@ -177,15 +190,27 @@
 
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/p/20250710/">
+                <img src="/p/20250710/0074dbe09767e97ac5e06f43b0d1586_hu_7b9964ce7595c8db.jpg"
+                        srcset="/p/20250710/0074dbe09767e97ac5e06f43b0d1586_hu_7b9964ce7595c8db.jpg 800w, /p/20250710/0074dbe09767e97ac5e06f43b0d1586_hu_afce47597c9d9bbf.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post 运算符" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
     <header class="article-category">
         
-            <a href="/categories/work/" style="background-color: #2a9d8f; color: #fff;">
-                工作学习
+            <a href="/categories/knowledge/" style="background-color: #002FA7; color: #ffffff;">
+                散装知识
             </a>
         
     </header>
@@ -193,12 +218,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/20250708/">List迭代器中的modCount</a>
+            <a href="/p/20250710/">运算符</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            学习list迭代器
+            常用运算符记录一下
         </h3>
         
     </div>
@@ -219,7 +244,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jul 08, 2025</time>
+                <time class="article-time--published">Jul 10, 2025</time>
             </div>
         
 
@@ -234,7 +259,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -249,9 +274,70 @@
     <section class="article-content">
     
     
-    <h1 id="迭代器">迭代器
-</h1><h2 id="使用迭代器遍历删除">使用迭代器遍历删除
-</h2><div class="highlight"><div class="chroma">
+    <h1 id="运算符">运算符
+</h1><h1 id="编程语言中的运算符总览按单目双目多目分类">编程语言中的运算符总览：按单目、双目、多目分类
+</h1><p>运算符是编程语言的基础元素，用于构建表达式、实现运算和逻辑判断。本文以<strong>运算符的元数（即操作数个数）<strong>为主线，梳理常见的</strong>单目（Unary）</strong>、**双目（Binary）<strong>和</strong>多目（Ternary）**运算符。</p>
+<hr>
+<h2 id="一单目运算符unary-operators">一、单目运算符（Unary Operators）
+</h2><p>单目运算符只需要一个操作数，常见如下：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>运算符</th>
+          <th>含义说明</th>
+          <th>适用示例</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>+</code></td>
+          <td>正号（通常可省略）</td>
+          <td><code>+a</code></td>
+      </tr>
+      <tr>
+          <td><code>-</code></td>
+          <td>负号</td>
+          <td><code>-a</code></td>
+      </tr>
+      <tr>
+          <td><code>++</code></td>
+          <td>自增（前/后缀）</td>
+          <td><code>++a</code>, <code>a++</code> <em>(Java/C++)</em></td>
+      </tr>
+      <tr>
+          <td><code>--</code></td>
+          <td>自减（前/后缀）</td>
+          <td><code>--a</code>, <code>a--</code> <em>(Java/C++)</em></td>
+      </tr>
+      <tr>
+          <td><code>!</code></td>
+          <td>逻辑非</td>
+          <td><code>!flag</code></td>
+      </tr>
+      <tr>
+          <td><code>~</code></td>
+          <td>位取反</td>
+          <td><code>~a</code></td>
+      </tr>
+      <tr>
+          <td><code>not</code></td>
+          <td>布尔非</td>
+          <td><code>not a</code> <em>(Python)</em></td>
+      </tr>
+      <tr>
+          <td><code>&amp;</code></td>
+          <td>引用/地址符（取地址）</td>
+          <td><code>&amp;x</code> <em>(C/C++)</em></td>
+      </tr>
+      <tr>
+          <td><code>*</code></td>
+          <td>指针解引用</td>
+          <td><code>*p</code> <em>(C/C++)</em></td>
+      </tr>
+  </tbody>
+</table></div>
+<p><code>++</code>、<code>--</code>在数字前后是有区别的，在前表示先计算在赋值，在后表示先赋值再计算。</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -265,23 +351,266 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arrayList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">100</span><span class="o">/</span><span class="n">0</span><span class="p">.</span><span class="na">75</span><span class="p">));</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">100</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">arrayList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayList</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Integer</span><span class="w"> </span><span class="n">next</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="na">next</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">next</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">it</span><span class="p">.</span><span class="na">remove</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">i = 100;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">op1 = i++;  // op1 = 100，先 op1 = i，然后 i = i + 1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">i = 100;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">op2 = ++i;  // op2 = 101，先 i = i + 1，然后赋值 op2
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">i = 100;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">op3 = i--;  // op3 = 100，先赋值 op3，然后 i = i - 1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">i = 100;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">op4 = --i;  // op4 = 99，先 i = i - 1，然后赋值 op4
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><hr>
+<h2 id="二双目运算符binary-operators">二、双目运算符（Binary Operators）
+</h2><p>双目运算符最为常见，涵盖算术、比较、逻辑等核心语义。</p>
+<h3 id="1-算术运算符">1. 算术运算符
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>运算符</th>
+          <th>含义</th>
+          <th>示例</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>+</code></td>
+          <td>加法</td>
+          <td><code>a + b</code></td>
+      </tr>
+      <tr>
+          <td><code>-</code></td>
+          <td>减法</td>
+          <td><code>a - b</code></td>
+      </tr>
+      <tr>
+          <td><code>*</code></td>
+          <td>乘法</td>
+          <td><code>a * b</code></td>
+      </tr>
+      <tr>
+          <td><code>/</code></td>
+          <td>除法</td>
+          <td><code>a / b</code></td>
+      </tr>
+      <tr>
+          <td><code>%</code></td>
+          <td>取模</td>
+          <td><code>a % b</code></td>
+      </tr>
+      <tr>
+          <td><code>**</code></td>
+          <td>幂</td>
+          <td><code>a ** b</code> <em>(Python)</em></td>
+      </tr>
+      <tr>
+          <td><code>//</code></td>
+          <td>地板除法</td>
+          <td><code>a // b</code> <em>(Python)</em></td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="2-赋值运算符">2. 赋值运算符
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>运算符</th>
+          <th>含义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>=</code></td>
+          <td>赋值</td>
+      </tr>
+      <tr>
+          <td><code>+=</code></td>
+          <td>加后赋值（<code>x += y</code> 即 <code>x = x + y</code>）</td>
+      </tr>
+      <tr>
+          <td><code>-=</code></td>
+          <td>减后赋值</td>
+      </tr>
+      <tr>
+          <td><code>*=</code></td>
+          <td>乘后赋值</td>
+      </tr>
+      <tr>
+          <td><code>/=</code></td>
+          <td>除后赋值</td>
+      </tr>
+      <tr>
+          <td><code>%=</code></td>
+          <td>取模赋值</td>
+      </tr>
+      <tr>
+          <td><code>**=</code></td>
+          <td>幂赋值</td>
+      </tr>
+      <tr>
+          <td><code>//=</code></td>
+          <td>整除赋值</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="3-比较运算符">3. 比较运算符
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>运算符</th>
+          <th>含义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>==</code></td>
+          <td>相等</td>
+      </tr>
+      <tr>
+          <td><code>!=</code></td>
+          <td>不等</td>
+      </tr>
+      <tr>
+          <td><code>&gt;</code></td>
+          <td>大于</td>
+      </tr>
+      <tr>
+          <td><code>&lt;</code></td>
+          <td>小于</td>
+      </tr>
+      <tr>
+          <td><code>&gt;=</code></td>
+          <td>大于等于</td>
+      </tr>
+      <tr>
+          <td><code>&lt;=</code></td>
+          <td>小于等于</td>
+      </tr>
+      <tr>
+          <td><code>is</code></td>
+          <td>对象标识相等   <em>(Python)</em></td>
+      </tr>
+      <tr>
+          <td><code>in</code></td>
+          <td>包含判断       <em>(Python)</em></td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="4-位运算符">4. 位运算符
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>运算符</th>
+          <th>含义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&amp;</code></td>
+          <td>位与</td>
+      </tr>
+      <tr>
+          <td>`</td>
+          <td>`</td>
+      </tr>
+      <tr>
+          <td><code>^</code></td>
+          <td>位异或</td>
+      </tr>
+      <tr>
+          <td><code>&lt;&lt;</code></td>
+          <td>左移</td>
+      </tr>
+      <tr>
+          <td><code>&gt;&gt;</code></td>
+          <td>右移（算术）</td>
+      </tr>
+      <tr>
+          <td><code>&gt;&gt;&gt;</code></td>
+          <td>无符号右移 <em>(Java)</em></td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="5-逻辑运算符">5. 逻辑运算符
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>运算符</th>
+          <th>含义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&amp;&amp;</code></td>
+          <td>逻辑与（短路） <em>(Java/C++)</em></td>
+      </tr>
+      <tr>
+          <td>`</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><code>and</code></td>
+          <td>逻辑与 <em>(Python)</em></td>
+      </tr>
+      <tr>
+          <td><code>or</code></td>
+          <td>逻辑或 <em>(Python)</em></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="三多目运算符ternary-operators">三、多目运算符（Ternary Operators）
+</h2><p>多目运算符中最经典的就是<strong>条件（三元）运算符</strong>：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>运算符结构</th>
+          <th>含义</th>
+          <th>示例</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>a ? b : c</code></td>
+          <td>若 <code>a</code> 为真则为 <code>b</code>，否则为 <code>c</code></td>
+          <td><em>(Java/C/C++)</em></td>
+      </tr>
+      <tr>
+          <td><code>b if a else c</code></td>
+          <td>同上逻辑</td>
+          <td><em>(Python)</em></td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="附录其他运算符结构组合表达式">附录：其他运算符/结构（组合表达式）
+</h2><ul>
+<li><code>,</code> 逗号运算符（C/C++ 中存在执行顺序控制）</li>
+<li><code>-&gt;</code>、<code>.</code> 成员访问（结构体/对象）</li>
+<li><code>::</code> 范围解析符（C++、Java 的静态成员访问）</li>
+</ul>
+<hr>
+<h2 id="总结">总结
+</h2><p>运算符数量虽不多，但掌握其分类和语义，可以帮助我们更好地理解表达式的构造与执行逻辑。建议在使用时牢记：</p>
+<ul>
+<li><strong>括号优先，避免歧义</strong></li>
+<li><strong>位运算性能好</strong></li>
+<li><strong>逻辑操作符优先考虑可读性和短路效应</strong></li>
+</ul>
+
 </section>
 
 
@@ -353,71 +682,23 @@
             
                 
 <article class="has-image">
-    <a href="/p/20250528/">
+    <a href="/p/20240711/">
         
         
             <div class="article-image">
-                <img src="/p/20250528/index.8bf08ed04a6a0d569462eb9917001062_hu_3a7fbad0b869b67f.jpg" 
+                <img src="/p/20240711/20240711.95a511ae6fab9525b0b120cc769038db_hu_63791f296fa4c6c3.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post Mysql中where和on总结"
-                        data-key="/20250528" 
-                        data-hash="md5-i/CO0EpqDVaUYuuZFwAQYg==">
+                        alt="Featured image of post 咸亨国际面试"
+                        data-key="/20240711" 
+                        data-hash="md5-laURrm&#43;rlSWwsSDMdpA42w==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Mysql中where和on总结</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/20250527/">
-        
-        
-            <div class="article-image">
-                <img src="/p/20250527/20250527.60125ad85533cb6a8b52332c50c5728c_hu_795aacd5515a261c.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 自定义验证入参方法"
-                        data-key="20250527" 
-                        data-hash="md5-YBJa2FUzy2qLUjMsUMVyjA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">自定义验证入参方法</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/20250519/">
-        
-        
-            <div class="article-image">
-                <img src="/p/20250519/20250519.08883a9e99966fd778d060514f143967_hu_a97c3308a6b2cc7.JPG" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Mysql自动递增"
-                        data-key="20250519" 
-                        data-hash="md5-CIg6npmWb9d40GBRTxQ5Zw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Mysql自动递增</h2>
+            <h2 class="article-title">咸亨国际面试</h2>
         </div>
     </a>
 </article>

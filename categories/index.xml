@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>记录每一天</copyright>
-        <lastBuildDate>Wed, 09 Jul 2025 14:56:48 +0800</lastBuildDate><atom:link href="https://shuliang.asia/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>工作学习</title>
-        <link>https://shuliang.asia/categories/work/</link>
-        <pubDate>Wed, 09 Jul 2025 14:56:48 +0800</pubDate>
+        <lastBuildDate>Thu, 10 Jul 2025 15:56:48 +0800</lastBuildDate><atom:link href="https://shuliang.asia/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>散装知识</title>
+        <link>https://shuliang.asia/categories/knowledge/</link>
+        <pubDate>Thu, 10 Jul 2025 15:56:48 +0800</pubDate>
         
-        <guid>https://shuliang.asia/categories/work/</guid>
-        <description>&lt;img src="https://shuliang.asia/categories/work/work.png" alt="Featured image of post 工作学习" /&gt;</description>
+        <guid>https://shuliang.asia/categories/knowledge/</guid>
+        <description>&lt;img src="https://shuliang.asia/categories/knowledge/0551a3b695ce821bf687ed30964f5f7.jpg" alt="Featured image of post 散装知识" /&gt;</description>
         </item>
         <item>
         <title>生活</title>
@@ -22,6 +22,14 @@
         
         <guid>https://shuliang.asia/categories/life/</guid>
         <description>&lt;img src="https://shuliang.asia/categories/life/life-index.JPG" alt="Featured image of post 生活" /&gt;</description>
+        </item>
+        <item>
+        <title>工作学习</title>
+        <link>https://shuliang.asia/categories/work/</link>
+        <pubDate>Wed, 28 May 2025 16:27:52 +0800</pubDate>
+        
+        <guid>https://shuliang.asia/categories/work/</guid>
+        <description>&lt;img src="https://shuliang.asia/categories/work/work.png" alt="Featured image of post 工作学习" /&gt;</description>
         </item>
         
     </channel>
