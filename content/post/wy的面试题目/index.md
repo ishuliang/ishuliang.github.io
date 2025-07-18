@@ -23,25 +23,21 @@ Redis 与其他`key - value`缓存产品有以下三个特点：
 
 Redis 优势:
 
->   性能极高: Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s 。
+>   -   性能极高: Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s 。
 >
->   丰富的数据类型 : Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及Ordered Sets 数据类型操
->   作。
->
->   原子: Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个操作是原子
->   性的。多个操作也支持事务，即原子性，通过 MULTI 和 EXEC 指令包起来。
->
->   丰富的特性: Redis 还支持 publish/subscribe, 通知, key 过期等等特性。
+>   -   丰富的数据类型 : Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及Ordered Sets 数据类型操作。
+>   
+>-   原子: Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个操作是原子性的。多个操作也支持事务，即原子性，通过 MULTI 和 EXEC 指令包起来。
+>   
+>   -   丰富的特性: Redis 还支持 publish/subscribe, 通知, key 过期等等特性。
 
 Redis 与其他 key-value 存储的不同：
 
->   Redis 有着更为复杂的数据结构并且提供对他们的原子性操作，这是一个不同于其他数据库的进化路
->   径。Redis 的数据类型都是基于基本数据结构的同时对程序员透明， 无需进行额外的抽象。
+>   Redis 有着更为复杂的数据结构并且提供对他们的原子性操作，这是一个不同于其他数据库的进化路径。Redis 的数据类型都是基于基本数据结构的，同时对程序员透明， 无需进行额外的抽象。
 >
->   Redis 运行在内存中但是可以持久化到磁盘，所以在对不同数据集进行高速读写时需要权衡内存， 因为
->   数据量不能大于硬件内存。在内存数据库方面的另一个优点是，相比在磁盘上相同的复杂的数据结构，
->   在内存中操作起来非常简单，这样 Redis 可以做很多内部复杂性很强的事情。同时，在磁盘格式方面他
->   们是紧凑的以追加的方式产生的， 因为他们并不需要进行随机访问。
+>   Redis 运行在内存中但是可以持久化到磁盘，所以在对不同数据集进行高速读写时需要权衡内存， 因为数据量不能大于硬件内存。
+>
+>   在内存数据库方面的另一个优点是，相比在磁盘上相同的复杂的数据结构，在内存中操作起来非常简单，这样 Redis 可以做很多内部复杂性很强的事情。同时，在磁盘格式方面他们是紧凑的以追加的方式产生的， 因为他们并不需要进行随机访问。
 
 ## redis数据双写
 
@@ -49,8 +45,7 @@ Redis 与其他 key-value 存储的不同：
 
 ## Redis 的数据类型
 
- Redis 支持五种数据类型： string（ 字符串），hash（ 哈希）， list（ 列表）， set（ 集合） 及
-sorted set（有序集合）。
+ Redis 支持五种数据类型： string（ 字符串），hash（ 哈希）， list（ 列表）， set（ 集合） 及sorted set（有序集合）。
 
 ## Redis 的持久化机制
 
@@ -106,9 +101,31 @@ AOF（Append-only file）持久化方式： 是指所有的命令行记录以 re
 
 5、使用底层模型不同，它们之间底层实现方式以及与客户端之间通信的应用协议不一样，Redis直接自己构建了 VM 机制 ，因为一般的系统调用系统函数的话，会浪费一定的时间去移动和请求；
 
+## redis使用场景
 
+购物车用Redis（如果存购物车数据，需要用其中的哈希类型和zset类型）（订单存mysql）
 
+redis适合热点数据：频繁访问但不频繁修改的数据。
 
+redis的数据类型中字符串适合存验证码，cacahe.set(key,value)适用于字符串
+
+## 字典与json相互转换
+
+-   vue: 把JSON字符串转换成字典->JSON.parse()                把字典转换成JSON字符串->JSON.stringify()
+
+-   JSON: json.loads 序列化 把json字符串转为字典,json.dumps 反序列化
+
+## vue中获取http的状态码
+
+在Vue中用try... catch...时，只要HTTP状态码不是200就会进入catch，此时获取catch报错的状态码可以用error.response.status
+
+## 解码与编码
+
+bytes字节
+
+encode 编码 将字符串转为字节，decode 解码 及那个字节转为字符串
+
+## elasticsearch
 
 elasticsearch深度分页,怎么解决
 
@@ -118,32 +135,5 @@ es适合搜索+日志，使用范围很小
 
 
 
-购物车用Redis,redis适合热点数据：频繁访问但不频繁修改 的数据
 
 
-
-redis的数据类型时key-value  类型的
-
-
-
-如果存购物车数据，需要用其中的哈希类型和zset类型
-
-
-
-redis的数据类型中字符串适合存验证码
-
-cacahe.set(key,value)适用于字符串
-
-订单存mysql
-
-
-
-在Vue中用try... catch...时，只要HTTP状态码不是200就会进入catch，此时获取catch报错的状态码可以用error.response.status
-
-bytes字节
-
-encode 编码 将字符串转为字节，decode 解码 及那个字节转为字符串
-
-json.loads 序列化 把json字符串转为字典
-
-json.dumps 反序列化
