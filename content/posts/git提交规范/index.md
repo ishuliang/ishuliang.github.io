@@ -1,6 +1,6 @@
 ---
 title: "Git提交规范"
-summary: git提交的一些类型
+summary: "git提交的一些类型"
 date: 2024-11-07T15:17:11+08:00
 categories: "学习"
 ---
