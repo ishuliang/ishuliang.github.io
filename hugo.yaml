@@ -1,0 +1,99 @@
+baseURL: http://localhost:1313/
+languageCode: zh
+title: Record of My Life
+theme: ["PaperMod"]
+
+params:
+  
+  author: Liu ShuLiang # 作者名（显示在文章、页脚等位置）
+  DateFormat: "January 2, 2006" # 日期显示格式（Hugo 固定的日期模板语法，对应「1月2日, 2006」）
+
+  defaultTheme: light # 主题模式：auto（跟随系统明暗）/ dark（强制暗色）/ light（强制亮色）
+  disableThemeToggle: false # 允许用户手动切换明暗主题（true 则隐藏切换按钮）
+  ShowReadingTime: false # 显示文章阅读时长
+  ShowShareButtons: false # 显示分享按钮（社交平台分享）
+  ShowPostNavLinks: true # 文章底部显示「上一篇/下一篇」导航
+  ShowBreadCrumbs: false # 显示面包屑导航（如「首页 > 分类 > 文章名」）
+  ShowCodeCopyButtons: false # 代码块不显示「复制」按钮（true 则显示）
+  ShowWordCount: false # 显示文章字数统计
+  ShowRssButtonInSectionTermList: true # 分类/标签页显示 RSS 订阅按钮
+  UseHugoToc: false # 使用 Hugo 原生的目录（TOC）功能（而非主题自定义）
+  disableSpecial1stPost: false # 不特殊处理第一篇文章（PaperMod 默认会突出第一篇，true 则取消）
+  disableScrollToTop: false # 显示「回到顶部」按钮（true 则隐藏）
+  hidemeta: false # 显示文章元信息（作者、日期、阅读时长等）
+  hideSummary: false # 列表页显示文章摘要hugo
+  showtoc: true # 文章页默认不显示目录
+  tocopen: true # 即使显示目录，默认也折叠（true 则展开）
+
+  # assets:
+  #   favicon: "favicon/favicon.ico" # 站点/favicon.ico 图标（绝对地址/相对路径）
+  
+  homeInfoParams:
+    Title: "Hi there 👋" # 欢迎标题
+    Content: Welcome to my RecordBook # 欢迎内容
+
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "记实录"
+    subtitle: "记录我的生活"
+    imageUrl: "/shuliang2.JPG" # 头像图片地址（绝对地址/相对路径）
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: shuliang
+    buttons:
+      - name: 文章
+        url: posts
+      - name: 分类
+        url: categories
+      # - name: 标签
+      #   url: tags
+      - name: 归档
+        url: archives
+
+  cover:
+    hidden: false # 全局隐藏封面图（仅结构化数据中保留）
+    hiddenInList: false # 列表页隐藏封面
+    hiddenInSingle: false # 文章详情页隐藏封面
+    linkFullImages: true # 点击封面图片时，是否跳转到图片原图
+
+  fuseOpts:
+    isCaseSensitive: false # 搜索不区分大小写
+    includeScore: true # 搜索结果包含匹配分数
+    shouldSort: true # 搜索结果排序
+    location: 0
+    distance: 1000
+    threshold: 0.4 # 匹配阈值（越小越严格）
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"] # 搜索范围（标题、链接、摘要、正文）
+
+
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts
+      weight: 10
+    - identifier: categories
+      name: 分类
+      url: /categories
+      weight: 20
+    # - identifier: tags
+    #   name: 标签
+    #   url: /tags
+    #   weight: 30
+    - identifier: archives
+      name: 归档
+      url: /archives
+      weight: 40
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 50
+
+# config.yml 示例
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
