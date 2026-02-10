@@ -32,7 +32,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           PERSONAL_TOKEN: ${{ secrets.BLOG_GEN }}
-          EXTERNAL_REPOSITORY: liushuliang/liushuliang.github.io
+          EXTERNAL_REPOSITORY: ishuliang/ishuliang.github.io
           PUBLISH_BRANCH: web
           PUBLISH_DIR: ./public
           commit_message: auto deploy
